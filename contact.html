@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact | Afro T-Shirt</title>
+        <meta name="description" content="Contactez Afro Tshirt pour vos questions, partenariats, projets textiles et demandes d’affiliation.">
+        <link rel="stylesheet" href="style.css">
+        <script src="js/contact.js" defer></script>
+    </head>
+    <body class="contact-page">
+        <!-- En-tête -->
+        <header class="header">
+            <div class="header-logo">
+                <a href="index.html">
+                    <img
+                        src="./image/Logo_afro-tshirt.png"
+                        alt="Logo Afro T-Shirt"
+                        >
+                </a>
+            </div>
+            <div class="header-navigation">
+                <nav class="nav" aria-label="Navigation principale">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="index.html">
+                                Accueil
+                            </a>
+                        </li>
+                        <li>
+                            <a href="boutique.html">
+                                Boutique
+                            </a>
+                        </li>
+                        <li>
+                            <a href="a-propos.html">
+                                À propos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="nous-rejoindre.html">
+                                Nous rejoindre
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="active" aria-current="page">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a
+                    href="boutique.html"
+                    class="cart-link"
+                    aria-label="Accéder au panier"
+                    >
+                    🛍
+                </a>
+            </div>
+        </header>
+        <main class="contact-main">
+            <div class="container contact-layout">
+                <section class="contact-intro" aria-labelledby="contact-title">
+                    <h1 id="contact-title">Contactez-nous</h1>
+                    <p>Pour toute question ou partenariat, écrivez-nous. Nous sommes à votre écoute.</p>
+                </section>
+
+                <!-- Formulaire de démonstration -->
+                <form class="contact-form" id="contact-form" aria-label="Formulaire de contact" aria-describedby="contact-required contact-demo">
+                    <p class="contact-reason" id="contact-reason" hidden></p>
+                    <input type="hidden" name="objet" id="contact-object" disabled>
+                    <p class="contact-required" id="contact-required">Les champs marqués * sont obligatoires.</p>
+                    <div class="contact-field">
+                        <label for="contact-name">Nom complet</label>
+                        <input type="text" id="contact-name" name="nom" autocomplete="name" placeholder="Entrez votre nom">
+                    </div>
+                    <div class="contact-field">
+                        <label for="contact-email">Adresse email *</label>
+                        <input type="email" id="contact-email" name="email" autocomplete="email" placeholder="Votre email ici" required aria-describedby="contact-email-error">
+                        <p class="contact-error" id="contact-email-error" hidden></p>
+                    </div>
+                    <div class="contact-field">
+                        <label for="contact-phone">Téléphone *</label>
+                        <input type="tel" id="contact-phone" name="telephone" autocomplete="tel" placeholder="Numéro de téléphone" required aria-describedby="contact-phone-error">
+                        <p class="contact-error" id="contact-phone-error" hidden></p>
+                    </div>
+                    <button class="contact-submit" type="submit" disabled>Envoyer</button>
+                    <p class="contact-demo" id="contact-demo">Formulaire de démonstration : aucun message n’est envoyé.</p>
+                    <noscript><p>Activez JavaScript pour tester la validation du formulaire.</p></noscript>
+                    <p class="contact-status" id="contact-status" role="status" aria-live="polite" aria-atomic="true"></p>
+                </form>
+
+                <!-- Emplacement du visuel manquant -->
+                <div class="contact-photo contact-photo-placeholder">
+                    <p>Photographie de palmiers à ajouter.</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Pied de page -->
+        <footer class="footer">
+            <div class="container footer-container">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img
+                            src="./image/AFRO_TSHIRT_BL.png"
+                            alt="Logo Afro T-Shirt"
+                            >
+                    </a>
+                </div>
+                <nav
+                    class="footer-nav"
+                    aria-label="Navigation pied de page"
+                    >
+                    <ul>
+                        <li>
+                            <a href="a-propos.html">
+                                À propos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html" aria-current="page">
+                                Contact
+                            </a>
+                        </li>
+                        <li>
+                            <a href="nous-rejoindre.html">
+                                Nous rejoindre
+                            </a>
+                        </li>
+                        <li>
+                            <a href="boutique.html">
+                                Boutique
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer-copyright">
+                    <p>
+                        © 2026 Afro T-Shirt. Tous droits réservés.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

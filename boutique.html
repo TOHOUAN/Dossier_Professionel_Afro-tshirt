@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Boutique | Afro T-Shirt</title>
+        <meta name="description" content="Découvrez les t-shirts Afro Tshirt : Les Éléphants, Les Lions, Les Léopards, YA FOYE et Monument DKR.">
+        <link rel="stylesheet" href="style.css">
+        <script src="js/boutique.js" defer></script>
+    </head>
+    <body class="boutique-page">
+        <!-- En-tête -->
+        <header class="header">
+            <div class="header-logo">
+                <a href="index.html">
+                    <img
+                        src="./image/Logo_afro-tshirt.png"
+                        alt="Logo Afro T-Shirt"
+                        >
+                </a>
+            </div>
+            <div class="header-navigation">
+                <nav class="nav" aria-label="Navigation principale">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="index.html">
+                                Accueil
+                            </a>
+                        </li>
+                        <li>
+                            <a href="boutique.html" class="active" aria-current="page">
+                                Boutique
+                            </a>
+                        </li>
+                        <li>
+                            <a href="a-propos.html">
+                                À propos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="nous-rejoindre.html">
+                                Nous rejoindre
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a
+                    href="boutique.html"
+                    class="cart-link"
+                    aria-label="Accéder au panier"
+                    >
+                    🛍
+                </a>
+            </div>
+        </header>
+        <main>
+            <!-- Bannière -->
+            <div class="boutique-hero">
+                <img src="image/hero_leopards.PNG" alt="Modèle portant un t-shirt noir Léopards au motif bleu et rouge." fetchpriority="high">
+            </div>
+
+            <!-- Catalogue -->
+            <div class="container boutique-layout">
+                <aside class="boutique-sidebar" aria-labelledby="boutique-browse-title">
+                    <h2 id="boutique-browse-title">Parcourir par</h2>
+                    <div class="boutique-categories">
+                        <button type="button" class="boutique-category" aria-pressed="true" data-boutique-all>Tous les produits</button>
+                        <button type="button" class="boutique-category" disabled aria-describedby="boutique-category-note">AFRO CITY</button>
+                        <button type="button" class="boutique-category" disabled aria-describedby="boutique-category-note">AFRO TRADITION &amp; CULTURE</button>
+                    </div>
+                    <p class="boutique-note" id="boutique-category-note">Filtres par catégorie à venir.</p>
+                </aside>
+                <section class="boutique-catalogue" aria-labelledby="boutique-title">
+                    <h1 id="boutique-title">Tous les produits</h1>
+                    <div class="boutique-toolbar">
+                        <label for="boutique-sort">Trier par :</label>
+                        <select id="boutique-sort">
+                            <option value="initial">Par défaut</option>
+                            <option value="ascending">Prix croissant</option>
+                            <option value="descending">Prix décroissant</option>
+                        </select>
+                    </div>
+                    <p class="boutique-note" id="boutique-cart-note">Panier à venir</p>
+                    <p class="boutique-sr-only" id="boutique-status" role="status"></p>
+                    <div class="boutique-grid" id="boutique-products"></div>
+                    <noscript><p>Activez JavaScript pour afficher les produits et utiliser le tri.</p></noscript>
+                </section>
+            </div>
+        </main>
+
+        <!-- Pied de page -->
+        <footer class="footer">
+            <div class="container footer-container">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img
+                            src="./image/AFRO_TSHIRT_BL.png"
+                            alt="Logo Afro T-Shirt"
+                            >
+                    </a>
+                </div>
+                <nav
+                    class="footer-nav"
+                    aria-label="Navigation pied de page"
+                    >
+                    <ul>
+                        <li>
+                            <a href="a-propos.html">
+                                À propos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+                        <li>
+                            <a href="nous-rejoindre.html">
+                                Nous rejoindre
+                            </a>
+                        </li>
+                        <li>
+                            <a href="boutique.html" aria-current="page">
+                                Boutique
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer-copyright">
+                    <p>
+                        © 2026 Afro T-Shirt. Tous droits réservés.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
