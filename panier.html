@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Panier de démonstration | Afro T-Shirt</title>
+        <meta name="description" content="Gérez votre panier local Afro T-Shirt et testez une simulation de commande sans paiement.">
+        <link rel="stylesheet" href="style.css">
+        <script src="js/produits-data.js" defer></script>
+        <script src="js/panier.js" defer></script>
+        <script src="js/navigation.js" defer></script>
+        <script src="js/panier-page.js" defer></script>
+    </head>
+    <body class="panier-page">
+        <a class="skip-link" href="#contenu">Aller au contenu</a>
+        <header class="header">
+            <div class="header-logo">
+                <a href="index.html">
+                    <img
+                        src="./image/Logo_afro-tshirt.png"
+                        alt="Logo Afro T-Shirt"
+                    >
+                </a>
+            </div>
+            <div class="header-navigation">
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation-principale" aria-label="Ouvrir le menu" hidden>
+                    <img src="icon_menu_mobile.svg" alt="" aria-hidden="true" width="24" height="24">
+                    <span>Menu</span>
+                </button>
+                <nav class="nav" id="navigation-principale" aria-label="Navigation principale">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="index.html">
+                                Accueil
+                            </a>
+                        </li>
+                        <li>
+                            <a href="boutique.html">
+                                Boutique
+                            </a>
+                        </li>
+                        <li>
+                            <a href="a-propos.html">
+                                À propos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="nous-rejoindre.html">
+                                Nous rejoindre
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a
+                    href="panier.html"
+                    class="cart-link"
+                    aria-label="Voir le panier"
+                >
+                    <img src="image/panier_01.svg" alt="" aria-hidden="true" width="24" height="24">
+                </a>
+            </div>
+        </header>
+        <main class="panier-main" id="contenu" tabindex="-1">
+            <div class="container">
+                <h1>Votre panier</h1>
+                <p class="panier-demo">Démonstration fictive : aucune commande réelle, aucun paiement et aucun envoi de données personnelles. Le paiement est réservé à la V2.</p>
+                <noscript><p>Activez JavaScript pour gérer le panier et tester la simulation.</p></noscript>
+                <p id="panier-empty" hidden>Votre panier est vide.</p>
+                <p class="panier-help">Quantités de 1 à 99 par modèle : limite technique de démonstration, sans indication de stock.</p>
+                <div class="panier-layout">
+                    <section aria-label="Articles du panier" id="panier-items"></section>
+                    <aside class="panier-summary" aria-labelledby="panier-summary-title">
+                        <h2 id="panier-summary-title">Récapitulatif</h2>
+                        <p><span id="panier-count">0</span> article(s)</p>
+                        <p>Total des articles : <strong id="panier-total">0 €</strong></p>
+                        <p>Aucun paiement, frais de livraison ou taxe supplémentaire ne sont calculés dans cette simulation.</p>
+                        <button class="btn btn-dark" id="panier-start" type="button" disabled>Simuler la commande</button>
+                        <button class="panier-link-button" id="panier-clear" type="button" disabled>Vider le panier</button>
+                    </aside>
+                </div>
+                <section class="panier-checkout" id="panier-checkout" aria-labelledby="panier-checkout-title" hidden>
+                    <h2 id="panier-checkout-title" tabindex="-1">Vérifier la simulation</h2>
+                    <p>Aucune adresse, identité ou coordonnée bancaire n’est demandée. Cette étape ne déclenche aucune commande réelle.</p>
+                    <ul id="panier-preview"></ul>
+                    <p>Total fictif : <strong id="panier-preview-total"></strong></p>
+                    <button class="btn btn-dark" type="button" id="panier-confirm">Confirmer la simulation fictive</button>
+                    <button class="panier-link-button" type="button" id="panier-cancel">Annuler</button>
+                </section>
+                <section class="panier-receipt" id="panier-receipt" aria-labelledby="panier-receipt-title" hidden>
+                    <h2 id="panier-receipt-title" tabindex="-1">Simulation terminée — aucune commande réelle</h2>
+                    <p>Récapitulatif fictif conservé uniquement pendant l’affichage de cette page. Aucun débit, aucune réservation de stock, aucun email envoyé.</p>
+                    <ul id="panier-receipt-items"></ul>
+                    <p>Total fictif : <strong id="panier-receipt-total"></strong></p>
+                    <p>Le panier de démonstration a été vidé.</p>
+                </section>
+                <a class="panier-back" href="boutique.html">Continuer dans la boutique</a>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container footer-container">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img
+                            src="./image/AFRO_TSHIRT_BL.png"
+                            alt="Logo Afro T-Shirt"
+                        >
+                    </a>
+                </div>
+                <nav
+                    class="footer-nav"
+                    aria-label="Navigation pied de page"
+                >
+                    <ul>
+                        <li>
+                            <a href="a-propos.html">
+                                À propos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+                        <li>
+                            <a href="nous-rejoindre.html">
+                                Nous rejoindre
+                            </a>
+                        </li>
+                        <li>
+                            <a href="boutique.html">
+                                Boutique
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer-copyright">
+                    <p>
+                        © 2026 Afro T-Shirt. Tous droits réservés.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

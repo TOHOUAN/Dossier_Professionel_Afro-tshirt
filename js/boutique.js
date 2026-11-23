@@ -1,44 +1,6 @@
 "use strict";
 
-const boutiqueProducts = [
-    {
-        "id": "elephants",
-        "name": "Les Éléphants de Côte d’Ivoire",
-        "price": 35,
-        "oldPrice": 45,
-        "image": "image/elephants-bl.png",
-        "alt": "T-shirt noir Éléphants de Côte d’Ivoire, motif éléphant orange et lettrage vert."
-    },
-    {
-        "id": "lions",
-        "name": "Les Lions du Sénégal",
-        "price": 35,
-        "oldPrice": 45,
-        "image": "image/LIONS_MS_01_tee_N.png",
-        "alt": "T-shirt noir Lions du Sénégal, motif lion vert et lettrage rouge."
-    },
-    {
-        "id": "leopards",
-        "name": "Les Léopards",
-        "price": 45,
-        "image": "image/BLK _leopards.png",
-        "alt": "T-shirt noir Léopards, motif bleu et lettrage rouge au dos."
-    },
-    {
-        "id": "ya-foye",
-        "name": "YA FOYE",
-        "price": 45,
-        "image": null,
-        "alt": ""
-    },
-    {
-        "id": "monument-dkr",
-        "name": "Monument DKR",
-        "price": 45,
-        "image": "image/DAKAR_PAIX_HOMME_PRES_BL.png",
-        "alt": "Modèle portant le t-shirt blanc Monument DKR au motif violet."
-    }
-];
+const boutiqueProducts = produitsCatalogue;
 
 function sortBoutiqueProducts(order) {
     const products = [...boutiqueProducts];
@@ -56,21 +18,29 @@ function renderBoutiqueProducts(order) {
     const cards = sortBoutiqueProducts(order).map((product) => {
         const card = document.createElement("article");
         card.className = "boutique-card";
+        const productUrl = `produit.html?id=${encodeURIComponent(product.id)}`;
+        const imageLink = document.createElement("a");
+        imageLink.href = productUrl;
+        imageLink.className = "boutique-product-link";
+        imageLink.setAttribute("aria-label", `Voir la fiche : ${product.name}`);
         if (product.image) {
             const image = document.createElement("img");
             image.className = "boutique-product-image";
             image.src = product.image;
             image.alt = product.alt;
             image.loading = "lazy";
-            card.append(image);
+            imageLink.append(image);
         } else {
             const placeholder = document.createElement("div");
             placeholder.className = "boutique-product-image boutique-placeholder";
             placeholder.textContent = "Visuel à venir";
-            card.append(placeholder);
+            imageLink.append(placeholder);
         }
         const title = document.createElement("h2");
-        title.textContent = product.name;
+        const nameLink = document.createElement("a");
+        nameLink.href = productUrl;
+        nameLink.textContent = product.name;
+        title.append(nameLink);
         const price = document.createElement("p");
         price.className = "boutique-price";
         if (product.oldPrice) {
@@ -86,14 +56,15 @@ function renderBoutiqueProducts(order) {
         button.type = "button";
         button.className = "boutique-add";
         button.textContent = "Ajouter au panier";
-        button.disabled = true;
+        button.setAttribute("aria-label", `Ajouter au panier : ${product.name}`);
+        button.addEventListener("click", () => AfroCart.add(product.id));
         button.setAttribute("aria-describedby", "boutique-cart-note");
-        card.append(title, price, button);
+        card.append(imageLink, title, price, button);
         return card;
     });
     grid.replaceChildren(...cards);
     const labels = { initial: "ordre initial", ascending: "prix croissant", descending: "prix décroissant" };
-    document.getElementById("boutique-status").textContent = `5 produits affichés, ${labels[order] || labels.initial}.`;
+    document.getElementById("boutique-status").textContent = `${boutiqueProducts.length} produits affichés, ${labels[order] || labels.initial}.`;
 }
 
 renderBoutiqueProducts("initial");

@@ -1,0 +1,197 @@
+AFRO T-SHIRT — FINALISATION V1 BOUTIQUE
+
+1. PÉRIMÈTRE ET RÉSULTAT
+
+La V1 propose un catalogue de quatre produits, des fiches dynamiques, un panier
+persistant en JavaScript et une simulation de commande explicitement fictive.
+Aucun prestataire de paiement, aucune transaction, aucune commande réelle,
+aucun envoi de données personnelles. Le paiement est réservé à la V2.
+Aucune commande Git ni aucun déploiement exécuté. Site commercial inchangé.
+
+2. ANALYSE INITIALE
+
+Le catalogue partagé js/produits-data.js contenait exactement : Éléphants et
+Lions à 35 € (ancien prix 45 €), Léopards et YA FOYE à 45 €.
+Le tri par prix et les fiches étaient fonctionnels. Les boutons Ajouter au panier
+étaient désactivés ; le lien sac pointait vers Boutique et il n’existait pas de
+stockage panier. Contact proposait trois formulaires conditionnels de démonstration.
+L’ancien identifiant monument-dkr était déjà traité comme indisponible.
+Ces données, états et fonctionnalités ont été conservés.
+
+3. FICHIERS CRÉÉS
+
+- panier.html : articles, quantités, suppression, récapitulatif, simulation et bilan fictif.
+- js/panier.js : état partagé du panier, stockage, validation des lignes, calculs,
+  compteur commun, statut accessible et synchronisation entre pages ouvertes.
+- js/panier-page.js : affichage et interactions de la page panier, étapes de simulation.
+- tests/panier-v1.html et tests/panier-v1.js : tests exécutables sans framework.
+- preuves/panier-v1-tests.json : résultats détaillés des 65 contrôles réussis.
+- RAPPORT_V1_BOUTIQUE.txt : présent rapport.
+
+4. FICHIERS MODIFIÉS
+
+- index.html, a-propos.html, nous-rejoindre.html, contact.html : lien du sac vers
+  panier.html, nom accessible « Voir le panier », chargement catalogue puis panier.
+- boutique.html : même intégration, remplacement de « Panier à venir » par la mention
+  de démonstration ; scripts chargés avant boutique.js.
+- produit.html : intégration du compteur partagé et chargement de panier.js avant produit.js.
+- js/boutique.js : activation des boutons avec nom accessible spécifique au produit.
+- js/produit.js : bouton Ajouter au panier sur les seules fiches actives ; mention V1/V2.
+- style.css : compteur, page panier, erreurs de quantité et grilles responsive ; curseur
+  adapté aux boutons désormais actifs. Les autres composants existants sont conservés.
+
+Le catalogue js/produits-data.js, le script js/contact.js et les fichiers images sont
+inchangés, vérifiés par comparaison d’empreintes avant/après. Aucun prix, visuel,
+caractéristique produit ou contenu commercial n’a été inventé.
+
+5. ARCHITECTURE ET STOCKAGE
+
+Les pages chargent produits-data.js, puis panier.js, puis leur script spécifique,
+avec defer. L’objet public AfroCart fournit add, setQuantity, remove, clear, summary
+et les utilitaires de présentation. La page et les boutons utilisent cette même API.
+Le catalogue reste la seule source de noms, images et prix.
+
+Clé localStorage : afro-tshirt.panier.v1.
+Exemple de valeur : [{"id":"elephants","quantity":2},{"id":"ya-foye","quantity":1}].
+Aucun nom de client, email, téléphone, adresse, numéro bancaire ou historique de
+commande n’est collecté ni enregistré par le panier.
+Les objets enregistrés sont reconstruits avec seulement id et quantity ; les champs
+étrangers et les prix fournis depuis un stockage manipulé ne sont pas utilisés.
+Les ID retirés/inconnus et quantités invalides sont ignorés. Un JSON corrompu produit
+un panier vide au lieu de bloquer l’application. Le stockage est nettoyé à la prochaine
+mutation effectuée par l’application.
+
+Les quantités sont des entiers de 1 à 99. Cette limite est purement technique pour
+la démonstration : elle est expliquée dans l’interface et ne représente pas un stock.
+Ajouter deux fois un même ID incrémente sa ligne au lieu de la dupliquer.
+Changer une quantité recalcule son total et le total global. Supprimer retire la ligne.
+Vider le panier enregistre un tableau vide, sans effacer les autres clés du navigateur.
+
+Les prix sont convertis en centimes entiers avant multiplication et addition, puis
+formatés avec Intl.NumberFormat en euros. Les anciens prix barrés ne servent pas au
+calcul. Exemple contrôlé : 2 × 35 € + 1 × 45 € = 115 €.
+Le montant est nommé « Total des articles » : aucun tarif de livraison, TVA distincte
+ou frais supplémentaire fictif n’est ajouté.
+
+Le compteur du header affiche la somme des quantités, pas seulement le nombre de
+modèles. Son nom accessible est mis à jour et le badge visuel est masqué aux lecteurs
+d’écran pour éviter une lecture redondante.
+Un événement personnalisé actualise la page courante ; storage actualise les autres
+pages ouvertes sur la même origine. Chaque mutation relit l’état persistant récent.
+Si localStorage est bloqué ou saturé, le panier passe en mémoire et un avertissement
+visible explique qu’il sera perdu lors de la navigation/recharge. Ce repli évite un
+plantage, mais ne prétend pas offrir une persistance indisponible.
+
+6. SIMULATION DE COMMANDE
+
+Étape 1 : bouton « Simuler la commande » disponible uniquement avec des articles.
+Un récapitulatif explicite présente les quantités et le total fictif.
+Étape 2 : « Confirmer la simulation fictive » produit un bilan clairement fictif et
+vide le panier. Aucune référence de commande réelle n’est créée.
+Annuler laisse le panier intact. Une modification invalide le récapitulatif affiché.
+Avant confirmation, une signature ID/quantités est comparée à l’état courant : si le
+panier a changé, l’utilisateur doit vérifier une nouvelle simulation.
+Une seconde activation après vidage ne crée pas de nouvelle commande.
+Le bilan reste uniquement dans le DOM de la page ; il disparaît après rechargement.
+Aucun formulaire personnel, API réseau ou service de paiement n’intervient dans ces
+scripts. Les requêtes HTTP des tests chargent seulement les fichiers locaux.
+
+7. ACCESSIBILITÉ ET RESPONSIVE
+
+La nouvelle page possède un seul h1, des h2, des sections et un récapitulatif nommé.
+Les champs quantité ont des labels spécifiques, min/max/step, des messages associés
+par aria-describedby et aria-invalid. Les erreurs sont aussi annoncées par role=status.
+Le focus est conservé après modification de quantité, replacé après suppression et
+dirigé vers les titres des étapes de simulation. Les liens restent des éléments a ;
+les actions sont des boutons. Les styles de focus et de réduction des animations
+existants restent applicables. Les images utilisent object-fit: contain.
+Desktop : articles et récapitulatif en deux colonnes ; sous 800 px : une colonne.
+La zone des quantités et des boutons est utilisable sans largeur fixe excessive.
+Le header, le footer, les ancres et les formulaires existants sont conservés.
+
+8. TESTS EFFECTIVEMENT EXÉCUTÉS
+
+Navigateur : Chrome réel sans interface, profil de test distinct, serveur HTTP lié
+à 127.0.0.1. localStorage est testé sur la même origine HTTP, pas avec des fichiers
+file:// dont la persistance entre documents peut différer selon le navigateur.
+
+65 contrôles réussis, détaillés dans preuves/panier-v1-tests.json :
+- Panier vide et bouton simulation désactivé.
+- Ajout depuis Boutique, fusion d’un même modèle et total 115 €.
+- Ajout depuis la fiche YA FOYE, navigation et persistance après rechargement.
+- Modification de quantité et focus conservé.
+- Refus des quantités vide, zéro, négative, décimale ou supérieure à 99.
+- Erreur de quantité bloquant la simulation.
+- Suppression d’un article et recalcul du total.
+- Prévisualisation, focus de l’étape, annulation et conservation des articles.
+- Invalidation après modification du panier.
+- Confirmation fictive avec total exact, vidage et impossibilité de doubler la commande.
+- Absence de formulaire de collecte personnelle dans le parcours panier.
+- Bilan fictif non conservé après rechargement.
+- JSON corrompu, ID retiré, mauvais types, quantités invalides et champs étrangers.
+- Prix recalculés depuis le catalogue malgré des données injectées dans le stockage.
+- Limite technique à 99, avertissement de stockage et repli en mémoire.
+- Échecs d’écriture et lecture bloquée dès l’initialisation.
+- Synchronisation entre deux documents ouverts de même origine.
+- Rendu des sept pages à 375, 768 et 1440 px : 21 configurations, aucun débordement
+  horizontal mesuré, aucune image HTML non chargée, aucun chevauchement du sac avec
+  les liens de navigation ; compteur correct à trois articles.
+- Trois ordres de tri préservés sur les quatre produits.
+- Quatre fiches actives ; Monument DKR indisponible ; ID inconnu introuvable.
+- Quatre parcours Contact : un formulaire visible et validation des champs obligatoires.
+- Vidage explicite du panier.
+
+Analyse statique : liens locaux et ancres, labels, identifiants uniques, références ARIA,
+ordre defer, un h1 par page, ressources et équilibre des délimiteurs CSS contrôlés.
+Les tests sont allés à leur terme sans exception bloquante. Aucune opération Git utilisée.
+
+REPRODUIRE LES TESTS
+Depuis le dossier du projet : python3 -m http.server 8765 --bind 127.0.0.1
+Ouvrir http://127.0.0.1:8765/tests/panier-v1.html dans un profil navigateur de test,
+puis « Lancer les tests locaux ». Les tests modifient temporairement la seule clé du
+panier et restaurent sa valeur initiale en fin de parcours, même en cas d’exception.
+Ne pas fermer la page pendant les tests. Ils ne doivent pas être lancés dans un profil
+contenant des données de travail importantes. Le profil Chrome utilisé ici était isolé.
+
+9. LIMITES, ANOMALIES RESTANTES ET V2
+
+Aucun échec parmi les contrôles exécutés. Cela ne constitue pas un audit WCAG complet :
+un parcours manuel Tab/Maj+Tab, VoiceOver, le zoom à 200 % et Safari/Firefox restent à
+vérifier. Les largeurs ont été testées dans des iframes, pas sur téléphone physique.
+Les essais ne couvrent pas toutes les courses simultanées entre plusieurs onglets.
+localStorage n’est ni une base serveur ni une garantie de disponibilité ; il reste
+modifiable par l’utilisateur, limité au navigateur et à l’origine, et peut être effacé.
+Le mode mémoire est explicitement temporaire, sans migration automatique vers un serveur.
+
+Les filtres de catégories restent désactivés tant que la répartition n’est pas validée.
+Les tailles, variantes, stocks, descriptions techniques et tarifs de livraison ne sont
+pas documentés ; ils n’ont pas été inventés. Le formulaire Contact reste une démonstration.
+Aucun paiement n’est présent. En V2, prévoir un serveur qui valide à nouveau les prix,
+les commandes et les données, puis seulement intégrer le paiement selon une demande
+explicite. La logique locale de cette V1 ne doit pas devenir une source de vérité
+financière pour un site commercial réel.
+Les rapports et preuves des étapes précédentes décrivent leur état historique ; le
+présent rapport et panier-v1-tests.json décrivent cette nouvelle V1.
+
+10. COMPÉTENCES FRONT-END DÉMONTRÉES POUR STUDI
+
+HTML : structure sémantique, navigation, labels, boutons adaptés aux actions.
+CSS : réutilisation des composants, Grid/Flexbox, media queries, focus et images fluides.
+JavaScript : fonctions réutilisables, tableaux/Map, manipulation DOM sans innerHTML,
+événements, modules logiques isolés par fermeture et API partagée sans framework.
+Persistance : JSON/localStorage, validation des données relues, gestion d’erreurs,
+synchronisation avec l’événement storage et repli explicite en mémoire.
+Calculs : centimes entiers et formatage localisé des prix.
+Accessibilité : erreurs associées, annonces de statut, gestion du focus et compteur nommé.
+Qualité : tests d’intégration navigateur, cas négatifs, non-régression et limites annoncées.
+Protection des données : aucune collecte personnelle et aucune transmission pour la simulation.
+
+PREUVES CONSEILLÉES POUR LE DOSSIER
+- Catalogue avec quatre modèles et compteur après deux ajouts identiques.
+- Fiche YA FOYE et ajout au panier.
+- Panier avec deux quantités différentes, total et suppression.
+- Erreur de quantité et focus visible.
+- Étape « Vérifier la simulation », puis bilan « aucune commande réelle ».
+- Affichage mobile et panneau Application montrant uniquement ID/quantités dans la clé.
+- Extraits de sanitize(), calcul en centimes et signature avant confirmation.
+- Résultats JSON et page de tests sans framework.

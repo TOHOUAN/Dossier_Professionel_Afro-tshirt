@@ -4,11 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Boutique | Afro T-Shirt</title>
-        <meta name="description" content="Découvrez les t-shirts Afro Tshirt : Les Éléphants, Les Lions, Les Léopards, YA FOYE et Monument DKR.">
+        <meta name="description" content="Découvrez les t-shirts Afro Tshirt : Les Éléphants, Les Lions, Les Léopards et YA FOYE.">
         <link rel="stylesheet" href="style.css">
+        <script src="js/produits-data.js" defer></script>
+        <script src="js/panier.js" defer></script>
+        <script src="js/navigation.js" defer></script>
         <script src="js/boutique.js" defer></script>
     </head>
     <body class="boutique-page">
+        <a class="skip-link" href="#contenu">Aller au contenu</a>
         <!-- En-tête -->
         <header class="header">
             <div class="header-logo">
@@ -16,11 +20,15 @@
                     <img
                         src="./image/Logo_afro-tshirt.png"
                         alt="Logo Afro T-Shirt"
-                        >
+                    >
                 </a>
             </div>
             <div class="header-navigation">
-                <nav class="nav" aria-label="Navigation principale">
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation-principale" aria-label="Ouvrir le menu" hidden>
+                    <img src="icon_menu_mobile.svg" alt="" aria-hidden="true" width="24" height="24">
+                    <span>Menu</span>
+                </button>
+                <nav class="nav" id="navigation-principale" aria-label="Navigation principale">
                     <ul class="nav-list">
                         <li>
                             <a href="index.html">
@@ -50,15 +58,15 @@
                     </ul>
                 </nav>
                 <a
-                    href="boutique.html"
+                    href="panier.html"
                     class="cart-link"
-                    aria-label="Accéder au panier"
-                    >
-                    🛍
+                    aria-label="Voir le panier"
+                >
+                    <img src="image/panier_01.svg" alt="" aria-hidden="true" width="24" height="24">
                 </a>
             </div>
         </header>
-        <main>
+        <main id="contenu" tabindex="-1">
             <!-- Bannière -->
             <div class="boutique-hero">
                 <img src="image/hero_leopards.PNG" alt="Modèle portant un t-shirt noir Léopards au motif bleu et rouge." fetchpriority="high">
@@ -85,7 +93,7 @@
                             <option value="descending">Prix décroissant</option>
                         </select>
                     </div>
-                    <p class="boutique-note" id="boutique-cart-note">Panier à venir</p>
+                    <p class="boutique-note" id="boutique-cart-note">Panier de démonstration : aucune transaction. Paiement prévu en V2.</p>
                     <p class="boutique-sr-only" id="boutique-status" role="status"></p>
                     <div class="boutique-grid" id="boutique-products"></div>
                     <noscript><p>Activez JavaScript pour afficher les produits et utiliser le tri.</p></noscript>
@@ -101,13 +109,13 @@
                         <img
                             src="./image/AFRO_TSHIRT_BL.png"
                             alt="Logo Afro T-Shirt"
-                            >
+                        >
                     </a>
                 </div>
                 <nav
                     class="footer-nav"
                     aria-label="Navigation pied de page"
-                    >
+                >
                     <ul>
                         <li>
                             <a href="a-propos.html">

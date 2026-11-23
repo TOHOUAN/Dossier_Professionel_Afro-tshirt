@@ -1,0 +1,304 @@
+[
+  {
+    "name": "Panier vide",
+    "passed": true
+  },
+  {
+    "name": "Ajout boutique et fusion des articles",
+    "passed": true
+  },
+  {
+    "name": "Total 2 Éléphants + 1 Léopards = 115 €",
+    "passed": true
+  },
+  {
+    "name": "Stockage limité aux ID et quantités",
+    "passed": true
+  },
+  {
+    "name": "Ajout fiche et persistance après navigation",
+    "passed": true
+  },
+  {
+    "name": "Persistance après rechargement",
+    "passed": true
+  },
+  {
+    "name": "Quantité et recalcul",
+    "passed": true
+  },
+  {
+    "name": "Quantité invalide refusée : vide",
+    "passed": true
+  },
+  {
+    "name": "Quantité invalide refusée : 0",
+    "passed": true
+  },
+  {
+    "name": "Quantité invalide refusée : -1",
+    "passed": true
+  },
+  {
+    "name": "Quantité invalide refusée : 1.5",
+    "passed": true
+  },
+  {
+    "name": "Quantité invalide refusée : 100",
+    "passed": true
+  },
+  {
+    "name": "Erreur de quantité bloque la simulation",
+    "passed": true
+  },
+  {
+    "name": "Suppression d’un article",
+    "passed": true
+  },
+  {
+    "name": "Prévisualisation fictive et focus",
+    "passed": true
+  },
+  {
+    "name": "Annulation sans perte du panier",
+    "passed": true
+  },
+  {
+    "name": "Modification invalide la simulation",
+    "passed": true
+  },
+  {
+    "name": "Confirmation fictive et vidage",
+    "passed": true
+  },
+  {
+    "name": "Pas de collecte personnelle",
+    "passed": true
+  },
+  {
+    "name": "Pas de seconde commande",
+    "passed": true
+  },
+  {
+    "name": "Récapitulatif non stocké après rechargement",
+    "passed": true
+  },
+  {
+    "name": "Stockage corrompu géré",
+    "passed": true
+  },
+  {
+    "name": "IDs retirés et données invalides ignorés, prix catalogue",
+    "passed": true
+  },
+  {
+    "name": "Écriture nettoyée des champs étrangers",
+    "passed": true
+  },
+  {
+    "name": "Limite technique de 99",
+    "passed": true
+  },
+  {
+    "name": "Synchronisation entre deux pages ouvertes",
+    "passed": true
+  },
+  {
+    "name": "Échec d’écriture : mémoire et avertissement",
+    "passed": true
+  },
+  {
+    "name": "Échec de lecture géré sans exception",
+    "passed": true
+  },
+  {
+    "name": "Rendu index.html à 375px",
+    "passed": true,
+    "page": "index.html",
+    "width": 375
+  },
+  {
+    "name": "Rendu index.html à 768px",
+    "passed": true,
+    "page": "index.html",
+    "width": 768
+  },
+  {
+    "name": "Rendu index.html à 1440px",
+    "passed": true,
+    "page": "index.html",
+    "width": 1440
+  },
+  {
+    "name": "Rendu boutique.html à 375px",
+    "passed": true,
+    "page": "boutique.html",
+    "width": 375
+  },
+  {
+    "name": "Rendu boutique.html à 768px",
+    "passed": true,
+    "page": "boutique.html",
+    "width": 768
+  },
+  {
+    "name": "Rendu boutique.html à 1440px",
+    "passed": true,
+    "page": "boutique.html",
+    "width": 1440
+  },
+  {
+    "name": "Rendu a-propos.html à 375px",
+    "passed": true,
+    "page": "a-propos.html",
+    "width": 375
+  },
+  {
+    "name": "Rendu a-propos.html à 768px",
+    "passed": true,
+    "page": "a-propos.html",
+    "width": 768
+  },
+  {
+    "name": "Rendu a-propos.html à 1440px",
+    "passed": true,
+    "page": "a-propos.html",
+    "width": 1440
+  },
+  {
+    "name": "Rendu nous-rejoindre.html à 375px",
+    "passed": true,
+    "page": "nous-rejoindre.html",
+    "width": 375
+  },
+  {
+    "name": "Rendu nous-rejoindre.html à 768px",
+    "passed": true,
+    "page": "nous-rejoindre.html",
+    "width": 768
+  },
+  {
+    "name": "Rendu nous-rejoindre.html à 1440px",
+    "passed": true,
+    "page": "nous-rejoindre.html",
+    "width": 1440
+  },
+  {
+    "name": "Rendu contact.html à 375px",
+    "passed": true,
+    "page": "contact.html",
+    "width": 375
+  },
+  {
+    "name": "Rendu contact.html à 768px",
+    "passed": true,
+    "page": "contact.html",
+    "width": 768
+  },
+  {
+    "name": "Rendu contact.html à 1440px",
+    "passed": true,
+    "page": "contact.html",
+    "width": 1440
+  },
+  {
+    "name": "Rendu produit.html?id=ya-foye à 375px",
+    "passed": true,
+    "page": "produit.html?id=ya-foye",
+    "width": 375
+  },
+  {
+    "name": "Rendu produit.html?id=ya-foye à 768px",
+    "passed": true,
+    "page": "produit.html?id=ya-foye",
+    "width": 768
+  },
+  {
+    "name": "Rendu produit.html?id=ya-foye à 1440px",
+    "passed": true,
+    "page": "produit.html?id=ya-foye",
+    "width": 1440
+  },
+  {
+    "name": "Rendu panier.html à 375px",
+    "passed": true,
+    "page": "panier.html",
+    "width": 375
+  },
+  {
+    "name": "Rendu panier.html à 768px",
+    "passed": true,
+    "page": "panier.html",
+    "width": 768
+  },
+  {
+    "name": "Rendu panier.html à 1440px",
+    "passed": true,
+    "page": "panier.html",
+    "width": 1440
+  },
+  {
+    "name": "Tri ascending",
+    "passed": true
+  },
+  {
+    "name": "Tri descending",
+    "passed": true
+  },
+  {
+    "name": "Tri initial",
+    "passed": true
+  },
+  {
+    "name": "Fiche elephants",
+    "passed": true
+  },
+  {
+    "name": "Fiche lions",
+    "passed": true
+  },
+  {
+    "name": "Fiche leopards",
+    "passed": true
+  },
+  {
+    "name": "Fiche ya-foye",
+    "passed": true
+  },
+  {
+    "name": "Fiche monument-dkr",
+    "passed": true
+  },
+  {
+    "name": "Fiche inconnu",
+    "passed": true
+  },
+  {
+    "name": "Contact général",
+    "passed": true
+  },
+  {
+    "name": "Contact ?objet=projet-textile",
+    "passed": true
+  },
+  {
+    "name": "Contact ?objet=affiliation",
+    "passed": true
+  },
+  {
+    "name": "Contact ?objet=inconnu",
+    "passed": true
+  },
+  {
+    "name": "Vider le panier",
+    "passed": true
+  },
+  {
+    "name": "Stockage bloqué dès initialisation",
+    "passed": true
+  },
+  {
+    "name": "Ajout avec lecture bloquée",
+    "passed": true
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "test": "clavier réel CDP Tab/Entrée/Échap",
+    "sequence": [
+      {
+        "tag": "A",
+        "cls": "skip-link",
+        "outline": "solid",
+        "visible": true
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "outline": "solid",
+        "visible": true
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "menu-toggle",
+        "outline": "solid",
+        "visible": true
+      }
+    ],
+    "opened": true,
+    "firstLink": true,
+    "closedAndFocus": true
+  },
+  {
+    "test": "réduction des animations",
+    "scroll": "auto",
+    "transition": "0s"
+  },
+  {
+    "test": "redimensionnement menu vers desktop",
+    "ok": true
+  },
+  {
+    "test": "raccourci zoom natif headless",
+    "before": {
+      "width": 1440,
+      "dpr": 1
+    },
+    "after": {
+      "width": 1440,
+      "dpr": 1
+    },
+    "nativeChanged": false
+  },
+  {
+    "test": "exceptions JavaScript observées pendant les parcours CDP",
+    "errors": []
+  }
+]

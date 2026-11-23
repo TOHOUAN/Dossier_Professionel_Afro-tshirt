@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fiche produit | Afro T-Shirt</title>
+        <meta name="description" content="Découvrez les modèles de la boutique Afro T-Shirt.">
+        <link rel="stylesheet" href="style.css">
+        <script src="js/produits-data.js" defer></script>
+        <script src="js/panier.js" defer></script>
+        <script src="js/navigation.js" defer></script>
+        <script src="js/produit.js" defer></script>
+    </head>
+    <body class="produit-page">
+        <a class="skip-link" href="#contenu">Aller au contenu</a>
+        <!-- En-tête -->
+        <header class="header">
+            <div class="header-logo">
+                <a href="index.html">
+                    <img
+                        src="./image/Logo_afro-tshirt.png"
+                        alt="Logo Afro T-Shirt"
+                    >
+                </a>
+            </div>
+            <div class="header-navigation">
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation-principale" aria-label="Ouvrir le menu" hidden>
+                    <img src="icon_menu_mobile.svg" alt="" aria-hidden="true" width="24" height="24">
+                    <span>Menu</span>
+                </button>
+                <nav class="nav" id="navigation-principale" aria-label="Navigation principale">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="index.html">
+                                Accueil
+                            </a>
+                        </li>
+                        <li>
+                            <a href="boutique.html" class="active">
+                                Boutique
+                            </a>
+                        </li>
+                        <li>
+                            <a href="a-propos.html">
+                                À propos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="nous-rejoindre.html">
+                                Nous rejoindre
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a
+                    href="panier.html"
+                    class="cart-link"
+                    aria-label="Voir le panier"
+                >
+                    <img src="image/panier_01.svg" alt="" aria-hidden="true" width="24" height="24">
+                </a>
+            </div>
+        </header>
+        <main class="produit-main" id="contenu" tabindex="-1">
+            <div class="container">
+                <nav class="produit-breadcrumb" aria-label="Fil d’Ariane">
+                    <ol>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="boutique.html">Boutique</a></li>
+                        <li><span id="produit-breadcrumb-name" aria-current="page">Fiche produit</span></li>
+                    </ol>
+                </nav>
+
+                <!-- Fiche produit -->
+                <div class="produit-layout">
+                    <div class="produit-gallery" id="produit-gallery" hidden></div>
+                    <section class="produit-information" aria-labelledby="produit-title">
+                        <p class="produit-eyebrow">AFRO T-SHIRT</p>
+                        <h1 id="produit-title">Fiche produit</h1>
+                        <p class="produit-price" id="produit-price" hidden></p>
+                        <div class="produit-description" id="produit-description" hidden></div>
+                        <div class="produit-specifications" id="produit-specifications" hidden></div>
+                        <p class="produit-notice" id="produit-notice">Chargement de la fiche…</p>
+                        <a class="btn btn-dark produit-back" href="boutique.html">Retour à la boutique</a>
+                        <noscript><p>Activez JavaScript pour consulter les informations du produit.</p></noscript>
+                    </section>
+                </div>
+
+                <!-- Autres modèles -->
+                <section class="produit-related" id="produit-related" aria-labelledby="produit-related-title" hidden>
+                    <h2 id="produit-related-title">Découvrir d’autres modèles</h2>
+                    <div class="produit-related-grid" id="produit-related-grid"></div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Pied de page -->
+        <footer class="footer">
+            <div class="container footer-container">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img
+                            src="./image/AFRO_TSHIRT_BL.png"
+                            alt="Logo Afro T-Shirt"
+                        >
+                    </a>
+                </div>
+                <nav
+                    class="footer-nav"
+                    aria-label="Navigation pied de page"
+                >
+                    <ul>
+                        <li>
+                            <a href="a-propos.html">
+                                À propos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+                        <li>
+                            <a href="nous-rejoindre.html">
+                                Nous rejoindre
+                            </a>
+                        </li>
+                        <li>
+                            <a href="boutique.html">
+                                Boutique
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer-copyright">
+                    <p>
+                        © 2026 Afro T-Shirt. Tous droits réservés.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

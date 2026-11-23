@@ -1,0 +1,168 @@
+AFRO T-SHIRT — RÉALISATION DES FICHES PRODUITS
+
+1. AUDIT INITIAL ET PÉRIMÈTRE
+
+Le projet comporte cinq pages principales, une feuille CSS partagée, un script
+Boutique et un script Contact. La boutique définit cinq objets avec id, name,
+price, oldPrice éventuel, image et alt. Ces données sont la référence commerciale.
+Le tri utilise une copie du tableau avant sort(), pour préserver son ordre initial.
+Les catégories et le panier sont désactivés ; aucun paiement n’est implémenté.
+Contact possède trois formulaires conditionnels. Leur HTML et leur script n’ont
+pas été modifiés dans cette intervention.
+Les images référencées des quatre produits illustrés existent. YA FOYE possède
+image: null dans le catalogue initial : ce choix est conservé conformément à la
+demande. Un fichier YA FOYE_WHT.png existe désormais dans image/, mais il n’a pas
+été intégré ni présenté comme une variante validée.
+Le texte parasite « fe » avant le DOCTYPE de boutique.html a été retiré.
+
+2. FICHIERS CRÉÉS ET MODIFIÉS
+
+Créés :
+- produit.html : un seul modèle HTML pour les cinq fiches et l’état introuvable.
+- js/produits-data.js : catalogue commun des cinq produits.
+- js/produit.js : sélection et affichage de la fiche et des quatre autres modèles.
+- RAPPORT_FICHES_PRODUITS.txt : présent rapport.
+- preuves/produits-tests.json : résultats des contrôles Chrome exécutés.
+- preuves/fiche-produit-desktop-mobile.png : capture de la fiche Éléphants,
+  rendue dans deux iframes de 1440 et 375 px.
+
+Modifiés :
+- boutique.html : chargement du catalogue avant boutique.js, nettoyage du DOCTYPE.
+- js/boutique.js : utilisation du catalogue partagé et liens sur visuel et nom.
+- style.css : styles des fiches et des liens de cartes, préfixés produit-/boutique-.
+
+Non modifiés : Accueil, À propos, Nous rejoindre, Contact, js/contact.js et images.
+Aucune opération Git, publication, connexion à un service externe ou modification
+du site commercial n’a été effectuée.
+
+3. ARCHITECTURE ET CHOIX TECHNIQUES
+
+Les scripts classiques avec defer sont conservés : ils correspondent à
+l’architecture du projet et permettent l’ouverture locale sans introduire de
+framework ni d’étape de compilation. Le navigateur les exécute après l’analyse
+du HTML et dans l’ordre des balises : catalogue, puis logique de la page.
+Les produits sont définis une seule fois dans produitsCatalogue. boutiqueProducts
+reste une référence à ce tableau partagé, pas une deuxième définition.
+Le catalogue déplacé a été comparé à la source initiale : objets strictement
+identiques, y compris les noms, prix, anciens prix, chemins et textes alternatifs.
+Un changement de prix futur se fait ainsi dans un seul fichier.
+
+4. URLSearchParams ET MANIPULATION DU DOM
+
+Exemple : produit.html?id=elephants.
+window.location.search fournit « ?id=elephants ».
+new URLSearchParams(...).get("id") extrait « elephants ».
+find() recherche ensuite l’objet possédant cet id dans le catalogue.
+Si aucune correspondance n’existe, la page affiche « Produit introuvable » et un
+lien de retour, sans charger une image construite depuis la valeur de l’URL.
+L’URL est une clé de recherche ; elle n’est jamais injectée comme HTML.
+
+createElement crée les images, prix, descriptions éventuelles et liens.
+textContent insère les textes. Les chemins d’images proviennent du catalogue,
+et les identifiants des liens sont encodés avec encodeURIComponent.
+Le nom du produit alimente le h1, le fil d’Ariane et document.title.
+La meta description utilise uniquement le nom et le prix documentés.
+Aucune URL canonique de production ou donnée structurée de stock n’a été inventée.
+
+5. CONTENU, DESIGN ET ACCESSIBILITÉ
+
+La fiche reprend le header et le footer communs. Boutique reste visuellement
+repérée comme rubrique parente ; aria-current="page" est porté par le dernier
+élément du fil d’Ariane plutôt que par un lien vers une autre page.
+Un seul h1 est présent dans chaque état.
+Desktop : galerie à gauche, informations à droite avec Grid.
+Mobile : une colonne ; l’image est affichée avec object-fit: contain.
+Les liens sont des éléments a avec href ; le focus commun existant reste applicable.
+Aucune animation supplémentaire n’est introduite.
+YA FOYE affiche un placeholder textuel avec rôle img et nom accessible.
+Les autres modèles excluent le produit courant et conduisent à leur propre fiche.
+
+Il n’existe qu’une image de référence par produit illustré : aucune miniature
+ou variante supplémentaire n’a été ajoutée. Description et caractéristiques sont
+des champs facultatifs : leurs sections restent masquées tant que les données
+ne sont pas fournies. Aucune taille, matière, disponibilité, livraison ou variante
+commerciale n’a été déduite d’une image.
+Le panier de Boutique reste désactivé ; la fiche indique explicitement que
+l’achat et le panier ne sont pas disponibles dans cette démonstration.
+
+6. TESTS EFFECTIVEMENT EXÉCUTÉS
+
+Contrôles locaux :
+- Catalogue déplacé strictement identique à l’ancien tableau.
+- Existence des chemins des quatre images de produits et ressources HTML/CSS/JS.
+- Imbrication des balises, identifiants uniques, références ARIA et un h1 par page.
+- Destinations des liens et ancres des six pages locales.
+- Ordre des scripts defer sur Boutique et Produit.
+- Équilibre des délimiteurs CSS (ce contrôle n’est pas une certification W3C).
+- Comparaison des empreintes : seuls les trois fichiers existants annoncés ont
+  changé ; notamment contact.html et js/contact.js sont inchangés.
+
+Chrome réel en mode sans interface : 43 scénarios enregistrés dans le fichier JSON.
+
+A. Fiches : 21 configurations
+- Cinq ID connus + ID inconnu + absence d’ID, chacun à 375, 768 et 1440 px.
+- Nom, prix, ancien prix éventuel et chemin de l’image comparés au catalogue initial.
+- Placeholder accessible vérifié pour YA FOYE.
+- État introuvable vérifié avec ID inconnu et sans ID, sans galerie chargée.
+- Un seul h1, quatre autres modèles, ID des liens valides et aucun achat actif.
+- Aucun débordement horizontal ni image HTML non chargée dans ces cas.
+- Chaque lien de la fiche reçoit effectivement le focus par appel focus().
+- Titre du document et meta description collectés dans les résultats.
+
+B. Régression visuelle mesurée : 15 configurations
+- Les cinq pages principales aux mêmes trois largeurs.
+- Aucun débordement horizontal, toutes les images HTML chargées, un seul h1.
+
+C. Boutique : 3 scénarios
+- Croissant : 35 / 35 / 45 / 45 / 45 €.
+- Décroissant : 45 / 45 / 45 / 35 / 35 €.
+- Initial : elephants, lions, leopards, ya-foye, monument-dkr.
+- Liens identiques entre image et nom de chaque carte ; panier toujours désactivé.
+
+D. Contact : 4 scénarios de non-régression
+- URL sans paramètre, projet-textile, affiliation et valeur inconnue.
+- Un seul formulaire actif, champs obligatoires vides refusés puis saisies valides
+  acceptées avec le statut « aucun message n’est envoyé ».
+
+Vérification visuelle : capture Éléphants examinée à 1440 et 375 px ; galerie
+entière, colonnes correctement disposées, titres et prix visibles et autres
+modèles présents. Les scénarios exécutés sont allés au bout sans exception JS
+interrompant les contrôles ; cela ne constitue pas une analyse exhaustive de
+chaque message de console ou de toutes les combinaisons de saisie possibles.
+
+Limites des tests : largeurs obtenues dans des iframes Chrome, pas sur téléphone
+physique. Le focus a été contrôlé par programme, sans parcours manuel complet
+avec Tab/Maj+Tab ni lecteur d’écran. Le champ focusVisible dans le JSON provient
+d’une interrogation de style et ne constitue pas à lui seul une preuve visuelle
+de focus clavier. Aucun audit WCAG complet ou test Safari/Firefox réalisé.
+
+7. LIMITATIONS ET AMÉLIORATIONS FUTURES
+
+- Valider éventuellement le fichier YA FOYE_WHT.png avant de modifier le catalogue.
+- Fournir des descriptions, tailles, variantes et caractéristiques approuvées avant
+  de les afficher. Aucune donnée commerciale n’a été ajoutée artificiellement.
+- Ajouter plusieurs photos seulement lorsque leur association au produit est sûre.
+- Définir les catégories ; concevoir un vrai panier et paiement dans un autre lot.
+- Connecter un service d’envoi Contact uniquement sur demande explicite.
+- Contrôler manuellement le clavier, le zoom à 200 %, VoiceOver et les contrastes.
+- Optimiser les gros fichiers images et compléter une stratégie SEO lors du choix
+  d’un hébergement. Les fiches sont actuellement rendues côté navigateur.
+
+8. PREUVES CONSEILLÉES POUR LE DOSSIER STUDI
+
+La capture desktop/mobile et les résultats JSON sont conservés dans preuves/.
+Compléter avec :
+- Boutique puis clic sur une image ou un titre : URL produit avec l’id visible.
+- Même produit en desktop et mobile ; montrer la réutilisation d’un seul template.
+- Fiche Éléphants ou Lions avec ancien prix barré et prix actuel.
+- YA FOYE avec placeholder ; ID inconnu avec retour vers la boutique.
+- Extrait de produits-data.js et des deux balises defer de chaque page consommatrice.
+- Extrait URLSearchParams/find puis createElement/textContent dans produit.js.
+- Sélecteur de tri avant/après et formulaire Contact restant en démonstration.
+- Capture supplémentaire du focus obtenu par Tab lors d’un contrôle manuel.
+
+ARGUMENT À PRÉSENTER AU JURY
+Un catalogue unique alimente deux vues : la liste et le détail. L’identifiant dans
+l’URL sélectionne un objet ; le DOM est ensuite construit à partir de ses données.
+Cette séparation évite cinq pages dupliquées et les incohérences de prix, tout en
+permettant des tests ciblés et une maintenance simple en JavaScript natif.

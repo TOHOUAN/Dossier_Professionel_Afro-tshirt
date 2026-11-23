@@ -6,9 +6,13 @@
         <title>Contact | Afro T-Shirt</title>
         <meta name="description" content="Contactez Afro Tshirt pour vos questions, partenariats, projets textiles et demandes d’affiliation.">
         <link rel="stylesheet" href="style.css">
+        <script src="js/produits-data.js" defer></script>
+        <script src="js/panier.js" defer></script>
+        <script src="js/navigation.js" defer></script>
         <script src="js/contact.js" defer></script>
     </head>
     <body class="contact-page">
+        <a class="skip-link" href="#contenu">Aller au contenu</a>
         <!-- En-tête -->
         <header class="header">
             <div class="header-logo">
@@ -16,11 +20,15 @@
                     <img
                         src="./image/Logo_afro-tshirt.png"
                         alt="Logo Afro T-Shirt"
-                        >
+                    >
                 </a>
             </div>
             <div class="header-navigation">
-                <nav class="nav" aria-label="Navigation principale">
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation-principale" aria-label="Ouvrir le menu" hidden>
+                    <img src="icon_menu_mobile.svg" alt="" aria-hidden="true" width="24" height="24">
+                    <span>Menu</span>
+                </button>
+                <nav class="nav" id="navigation-principale" aria-label="Navigation principale">
                     <ul class="nav-list">
                         <li>
                             <a href="index.html">
@@ -50,49 +58,186 @@
                     </ul>
                 </nav>
                 <a
-                    href="boutique.html"
+                    href="panier.html"
                     class="cart-link"
-                    aria-label="Accéder au panier"
-                    >
-                    🛍
+                    aria-label="Voir le panier"
+                >
+                    <img src="image/panier_01.svg" alt="" aria-hidden="true" width="24" height="24">
                 </a>
             </div>
         </header>
-        <main class="contact-main">
+        <main class="contact-main" id="contenu" tabindex="-1">
             <div class="container contact-layout">
                 <section class="contact-intro" aria-labelledby="contact-title">
                     <h1 id="contact-title">Contactez-nous</h1>
                     <p>Pour toute question ou partenariat, écrivez-nous. Nous sommes à votre écoute.</p>
                 </section>
 
-                <!-- Formulaire de démonstration -->
-                <form class="contact-form" id="contact-form" aria-label="Formulaire de contact" aria-describedby="contact-required contact-demo">
-                    <p class="contact-reason" id="contact-reason" hidden></p>
-                    <input type="hidden" name="objet" id="contact-object" disabled>
-                    <p class="contact-required" id="contact-required">Les champs marqués * sont obligatoires.</p>
-                    <div class="contact-field">
-                        <label for="contact-name">Nom complet</label>
-                        <input type="text" id="contact-name" name="nom" autocomplete="name" placeholder="Entrez votre nom">
-                    </div>
-                    <div class="contact-field">
-                        <label for="contact-email">Adresse email *</label>
-                        <input type="email" id="contact-email" name="email" autocomplete="email" placeholder="Votre email ici" required aria-describedby="contact-email-error">
-                        <p class="contact-error" id="contact-email-error" hidden></p>
-                    </div>
-                    <div class="contact-field">
-                        <label for="contact-phone">Téléphone *</label>
-                        <input type="tel" id="contact-phone" name="telephone" autocomplete="tel" placeholder="Numéro de téléphone" required aria-describedby="contact-phone-error">
-                        <p class="contact-error" id="contact-phone-error" hidden></p>
-                    </div>
-                    <button class="contact-submit" type="submit" disabled>Envoyer</button>
-                    <p class="contact-demo" id="contact-demo">Formulaire de démonstration : aucun message n’est envoyé.</p>
-                    <noscript><p>Activez JavaScript pour tester la validation du formulaire.</p></noscript>
-                    <p class="contact-status" id="contact-status" role="status" aria-live="polite" aria-atomic="true"></p>
+                <!-- Formulaires par parcours -->
+                <form class="contact-form" id="contact-general" data-contact-path="general" aria-label="Contactez-nous" aria-describedby="contact-general-required contact-general-demo">
+                    <fieldset>
+                        <legend class="contact-form-legend">Contactez-nous</legend>
+                        <input type="hidden" name="objet" value="general">
+                        <p class="contact-required" id="contact-general-required">Les champs marqués * sont obligatoires.</p>
+                        <div class="contact-field">
+                            <label for="contact-general-name">Nom complet *</label>
+                            <input type="text" id="contact-general-name" name="name" aria-describedby="contact-general-name-error" data-required="true" required autocomplete="name">
+                            <p class="contact-error" id="contact-general-name-error" hidden></p>
+                        </div>
+                        <div class="contact-field">
+                            <label for="contact-general-email">Adresse email *</label>
+                            <input type="email" id="contact-general-email" name="email" aria-describedby="contact-general-email-error" data-required="true" required autocomplete="email">
+                            <p class="contact-error" id="contact-general-email-error" hidden></p>
+                        </div>
+                        <div class="contact-field">
+                            <label for="contact-general-phone">Téléphone</label>
+                            <input type="tel" id="contact-general-phone" name="phone" aria-describedby="contact-general-phone-error" autocomplete="tel">
+                            <p class="contact-error" id="contact-general-phone-error" hidden></p>
+                        </div>
+                        <div class="contact-field">
+                            <label for="contact-general-subject">Sujet *</label>
+                            <input type="text" id="contact-general-subject" name="subject" aria-describedby="contact-general-subject-error" data-required="true" required>
+                            <p class="contact-error" id="contact-general-subject-error" hidden></p>
+                        </div>
+                        <div class="contact-field">
+                            <label for="contact-general-message">Message *</label>
+                            <textarea id="contact-general-message" name="message" aria-describedby="contact-general-message-error" data-required="true" required rows="5"></textarea>
+                            <p class="contact-error" id="contact-general-message-error" hidden></p>
+                        </div>
+                        <button class="contact-submit" type="submit" disabled>Envoyer</button>
+                        <p class="contact-demo" id="contact-general-demo">Formulaire de démonstration : aucun message n'est envoyé.</p>
+                        <noscript><p>Activez JavaScript pour sélectionner le parcours et tester la validation.</p></noscript>
+                        <p class="contact-status" id="contact-general-status" role="status" aria-live="polite" aria-atomic="true"></p>
+                    </fieldset>
                 </form>
 
-                <!-- Emplacement du visuel manquant -->
-                <div class="contact-photo contact-photo-placeholder">
-                    <p>Photographie de palmiers à ajouter.</p>
+                <form class="contact-form" id="contact-projet-textile" data-contact-path="projet-textile" aria-label="Parlez-nous de votre projet textile" aria-describedby="contact-projet-textile-required contact-projet-textile-demo" hidden>
+                    <fieldset disabled>
+                        <legend class="contact-form-legend">Parlez-nous de votre projet textile</legend>
+                        <input type="hidden" name="objet" value="projet-textile">
+                        <p class="contact-required" id="contact-projet-textile-required">Les champs marqués * sont obligatoires.</p>
+                        <div class="contact-field">
+                            <label for="contact-projet-textile-name">Nom et prénom *</label>
+                            <input type="text" id="contact-projet-textile-name" name="name" aria-describedby="contact-projet-textile-name-error" data-required="true" autocomplete="name">
+                            <p class="contact-error" id="contact-projet-textile-name-error" hidden></p>
+                        </div>
+                        <div class="contact-field">
+                            <label for="contact-projet-textile-email">Email *</label>
+                            <input type="email" id="contact-projet-textile-email" name="email" aria-describedby="contact-projet-textile-email-error" data-required="true" autocomplete="email">
+                            <p class="contact-error" id="contact-projet-textile-email-error" hidden></p>
+                        </div>
+                        <div class="contact-field">
+                            <label for="contact-projet-textile-phone">Téléphone *</label>
+                            <input type="tel" id="contact-projet-textile-phone" name="phone" aria-describedby="contact-projet-textile-phone-error" data-required="true" autocomplete="tel">
+                            <p class="contact-error" id="contact-projet-textile-phone-error" hidden></p>
+                        </div>
+                        <div class="contact-field">
+                            <label for="contact-projet-textile-organization">Entreprise / association</label>
+                            <input type="text" id="contact-projet-textile-organization" name="organization" aria-describedby="contact-projet-textile-organization-error" autocomplete="organization">
+                            <p class="contact-error" id="contact-projet-textile-organization-error" hidden></p>
+                        </div>
+                        <div class="contact-field">
+                            <label for="contact-projet-textile-need">Type de besoin *</label>
+                            <select id="contact-projet-textile-need" name="need" aria-describedby="contact-projet-textile-need-error" data-required="true">
+                                <option value="">Choisissez une option</option>
+                                <option value="T-shirts vierges">T-shirts vierges</option>
+                                <option value="Impression textile">Impression textile</option>
+                                <option value="Broderie">Broderie</option>
+                                <option value="Confection sur mesure">Confection sur mesure</option>
+                                <option value="Production en série">Production en série</option>
+                                <option value="Autre">Autre</option>
+                            </select>
+                            <p class="contact-error" id="contact-projet-textile-need-error" hidden></p>
+                        </div>
+                        <div class="contact-field">
+                            <label for="contact-projet-textile-quantity">Quantité estimée *</label>
+                            <input type="number" id="contact-projet-textile-quantity" name="quantity" aria-describedby="contact-projet-textile-quantity-error" data-required="true" min="1" step="1" inputmode="numeric">
+                            <p class="contact-error" id="contact-projet-textile-quantity-error" hidden></p>
+                        </div>
+                        <div class="contact-field">
+                            <label for="contact-projet-textile-date">Date souhaitée</label>
+                            <input type="date" id="contact-projet-textile-date" name="date" aria-describedby="contact-projet-textile-date-error">
+                            <p class="contact-error" id="contact-projet-textile-date-error" hidden></p>
+                        </div>
+                        <div class="contact-field">
+                            <label for="contact-projet-textile-description">Description du projet *</label>
+                            <textarea id="contact-projet-textile-description" name="description" aria-describedby="contact-projet-textile-description-error" data-required="true" rows="5"></textarea>
+                            <p class="contact-error" id="contact-projet-textile-description-error" hidden></p>
+                        </div>
+                        <button class="contact-submit" type="submit" disabled>Envoyer</button>
+                        <p class="contact-demo" id="contact-projet-textile-demo">Formulaire de démonstration : aucun message n'est envoyé.</p>
+                        <noscript><p>Activez JavaScript pour sélectionner le parcours et tester la validation.</p></noscript>
+                        <p class="contact-status" id="contact-projet-textile-status" role="status" aria-live="polite" aria-atomic="true"></p>
+                    </fieldset>
+                </form>
+
+                <form class="contact-form" id="contact-affiliation" data-contact-path="affiliation" aria-label="Rejoindre le réseau Afro T-Shirt" aria-describedby="contact-affiliation-required contact-affiliation-demo" hidden>
+                    <fieldset disabled>
+                        <legend class="contact-form-legend">Rejoindre le réseau Afro T-Shirt</legend>
+                        <input type="hidden" name="objet" value="affiliation">
+                        <p class="contact-required" id="contact-affiliation-required">Les champs marqués * sont obligatoires.</p>
+                        <div class="contact-field">
+                            <label for="contact-affiliation-name">Nom et prénom *</label>
+                            <input type="text" id="contact-affiliation-name" name="name" aria-describedby="contact-affiliation-name-error" data-required="true" autocomplete="name">
+                            <p class="contact-error" id="contact-affiliation-name-error" hidden></p>
+                        </div>
+                        <div class="contact-field">
+                            <label for="contact-affiliation-email">Email *</label>
+                            <input type="email" id="contact-affiliation-email" name="email" aria-describedby="contact-affiliation-email-error" data-required="true" autocomplete="email">
+                            <p class="contact-error" id="contact-affiliation-email-error" hidden></p>
+                        </div>
+                        <div class="contact-field">
+                            <label for="contact-affiliation-phone">Téléphone *</label>
+                            <input type="tel" id="contact-affiliation-phone" name="phone" aria-describedby="contact-affiliation-phone-error" data-required="true" autocomplete="tel">
+                            <p class="contact-error" id="contact-affiliation-phone-error" hidden></p>
+                        </div>
+                        <div class="contact-field">
+                            <label for="contact-affiliation-structure">Nom de la structure ou du compte *</label>
+                            <input type="text" id="contact-affiliation-structure" name="structure" aria-describedby="contact-affiliation-structure-error" data-required="true">
+                            <p class="contact-error" id="contact-affiliation-structure-error" hidden></p>
+                        </div>
+                        <div class="contact-field">
+                            <label for="contact-affiliation-profile">Profil *</label>
+                            <select id="contact-affiliation-profile" name="profile" aria-describedby="contact-affiliation-profile-error" data-required="true">
+                                <option value="">Choisissez une option</option>
+                                <option value="Commerce">Commerce</option>
+                                <option value="Média">Média</option>
+                                <option value="Créateur de contenu / influenceur">Créateur de contenu / influenceur</option>
+                                <option value="Association">Association</option>
+                                <option value="Autre">Autre</option>
+                            </select>
+                            <p class="contact-error" id="contact-affiliation-profile-error" hidden></p>
+                        </div>
+                        <div class="contact-field">
+                            <label for="contact-affiliation-location">Ville et pays *</label>
+                            <input type="text" id="contact-affiliation-location" name="location" aria-describedby="contact-affiliation-location-error" data-required="true">
+                            <p class="contact-error" id="contact-affiliation-location-error" hidden></p>
+                        </div>
+                        <div class="contact-field">
+                            <label for="contact-affiliation-website">Site internet ou réseau social</label>
+                            <input type="url" id="contact-affiliation-website" name="website" aria-describedby="contact-affiliation-website-error" autocomplete="url">
+                            <p class="contact-error" id="contact-affiliation-website-error" hidden></p>
+                        </div>
+                        <div class="contact-field">
+                            <label for="contact-affiliation-audience">Audience ou clientèle estimée</label>
+                            <input type="text" id="contact-affiliation-audience" name="audience" aria-describedby="contact-affiliation-audience-error">
+                            <p class="contact-error" id="contact-affiliation-audience-error" hidden></p>
+                        </div>
+                        <div class="contact-field">
+                            <label for="contact-affiliation-motivation">Motivation *</label>
+                            <textarea id="contact-affiliation-motivation" name="motivation" aria-describedby="contact-affiliation-motivation-error" data-required="true" rows="5"></textarea>
+                            <p class="contact-error" id="contact-affiliation-motivation-error" hidden></p>
+                        </div>
+                        <button class="contact-submit" type="submit" disabled>Envoyer</button>
+                        <p class="contact-demo" id="contact-affiliation-demo">Formulaire de démonstration : aucun message n'est envoyé.</p>
+                        <noscript><p>Activez JavaScript pour sélectionner le parcours et tester la validation.</p></noscript>
+                        <p class="contact-status" id="contact-affiliation-status" role="status" aria-live="polite" aria-atomic="true"></p>
+                    </fieldset>
+                </form>
+
+                <!-- Photographie -->
+                <div class="contact-photo">
+                    <img src="image/Palmiers_contact.png" alt="Palmiers sous un ciel bleu" width="2172" height="724" loading="lazy">
                 </div>
             </div>
         </main>
@@ -105,13 +250,13 @@
                         <img
                             src="./image/AFRO_TSHIRT_BL.png"
                             alt="Logo Afro T-Shirt"
-                            >
+                        >
                     </a>
                 </div>
                 <nav
                     class="footer-nav"
                     aria-label="Navigation pied de page"
-                    >
+                >
                     <ul>
                         <li>
                             <a href="a-propos.html">

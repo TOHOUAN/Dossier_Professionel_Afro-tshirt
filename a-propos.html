@@ -6,8 +6,12 @@
         <title>À propos | Afro T-Shirt</title>
         <meta name="description" content="Découvrez la mission et les valeurs d’Afro Tshirt : valoriser les cultures afro et la fabrication en Côte d’Ivoire.">
         <link rel="stylesheet" href="style.css">
+        <script src="js/produits-data.js" defer></script>
+        <script src="js/panier.js" defer></script>
+        <script src="js/navigation.js" defer></script>
     </head>
     <body class="about-page">
+        <a class="skip-link" href="#contenu">Aller au contenu</a>
         <!-- En-tête -->
         <header class="header">
             <div class="header-logo">
@@ -15,11 +19,15 @@
                     <img
                         src="./image/Logo_afro-tshirt.png"
                         alt="Logo Afro T-Shirt"
-                        >
+                    >
                 </a>
             </div>
             <div class="header-navigation">
-                <nav class="nav" aria-label="Navigation principale">
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation-principale" aria-label="Ouvrir le menu" hidden>
+                    <img src="icon_menu_mobile.svg" alt="" aria-hidden="true" width="24" height="24">
+                    <span>Menu</span>
+                </button>
+                <nav class="nav" id="navigation-principale" aria-label="Navigation principale">
                     <ul class="nav-list">
                         <li>
                             <a href="index.html">
@@ -49,15 +57,15 @@
                     </ul>
                 </nav>
                 <a
-                    href="boutique.html"
+                    href="panier.html"
                     class="cart-link"
-                    aria-label="Accéder au panier"
-                    >
-                    🛍
+                    aria-label="Voir le panier"
+                >
+                    <img src="image/panier_01.svg" alt="" aria-hidden="true" width="24" height="24">
                 </a>
             </div>
         </header>
-        <main>
+        <main id="contenu" tabindex="-1">
             <!-- Hero -->
             <section class="about-hero" aria-labelledby="about-title">
                 <div class="container">
@@ -159,13 +167,13 @@
                         <img
                             src="./image/AFRO_TSHIRT_BL.png"
                             alt="Logo Afro T-Shirt"
-                            >
+                        >
                     </a>
                 </div>
                 <nav
                     class="footer-nav"
                     aria-label="Navigation pied de page"
-                    >
+                >
                     <ul>
                         <li>
                             <a href="a-propos.html" aria-current="page">

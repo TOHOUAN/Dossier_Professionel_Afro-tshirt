@@ -1,0 +1,144 @@
+AFRO TSHIRT — AUDIT ET AMÉLIORATIONS
+Date : 20 novembre 2026
+
+PÉRIMÈTRE
+Les cinq pages locales, style.css, les deux scripts et leurs ressources.
+Aucune commande Git, restauration, création de commit ou publication exécutée.
+L’audit technique et les contrôles ci-dessous ne constituent pas une certification
+complète d’accessibilité ni une validation commerciale du site.
+
+1. ÉTAT DES CINQ PAGES
+
+Accueil — index.html
+Présents : navigation, hero, manifeste, explication du fonctionnement et appels
+à l’action. Les liens vers les quatre autres pages ont une destination existante.
+Améliorations : aria-current sur Accueil, accès direct au contenu, focus commun,
+menu mobile sur plusieurs lignes et boutons du hero limités à la largeur disponible.
+À valider : cadrage des fonds, contraste réel des textes sur les photographies,
+lecture à 200 % de zoom et cohérence éditoriale des cartes.
+
+À propos — a-propos.html
+Présents : hero coton, mission, trois arguments et six cartes de valeurs.
+Toutes les images et les trois icônes référencées existent.
+Améliorations : accès direct au contenu, focus et navigation communs ; colonnes
+internes des cartes autorisées à rétrécir sur mobile.
+À compléter : petites icônes des six valeurs absentes de la référence locale ;
+le paragraphe des valeurs est identique dans les six cartes. Faire valider les
+textes et les affirmations de fabrication par le porteur du projet.
+
+Boutique — boutique.html et js/boutique.js
+Présents : bannière Léopards, tableau de cinq produits, prix et trois ordres de tri.
+Les images sont affichées avec object-fit: contain, donc sans découper le produit.
+Le panier est volontairement désactivé et annoncé comme à venir.
+Les filtres AFRO CITY et AFRO TRADITION & CULTURE restent désactivés : aucune
+répartition validée n’est définie. Aucune association n’a été inventée.
+À compléter : visuel YA FOYE absent, photo du t-shirt Monument DKR seul absente
+(la photo portée du même produit est utilisée), répartition des catégories,
+parcours panier. Le catalogue nécessite JavaScript ; un texte noscript l’indique.
+L’icône de sac ouvre la boutique : son nom accessible a été corrigé pour annoncer
+sa destination réelle plutôt qu’un panier inexistant.
+
+Nous rejoindre — nous-rejoindre.html
+Présents : hero, projet textile, affiliation, profils et coordonnées de contact.
+L’image hero_scan_leopad.png existe ; une hauteur minimale de 680 px est définie
+sur desktop, 560 px sur mobile. Aucun formulaire dans le hero.
+Les ancres projet-textile et affiliation existent.
+Les liens contact.html?objet=projet-textile et contact.html?objet=affiliation
+aboutissent désormais à une page existante qui affiche le motif correspondant.
+Limite : les commissions et le tableau de bord sont présentés par du contenu
+et des illustrations, sans plateforme d’affiliation connectée.
+
+Contact — contact.html et js/contact.js
+La photographie image/Palmiers_contact.png est présente (2172 × 724 pixels).
+Son attribut src était déjà correct au début de cet audit ; aucune nouvelle
+panne d’image n’a été constatée. Les anciens styles de remplacement inutilisés
+ont été retirés après recherche dans tous les fichiers HTML et JavaScript.
+L’image possède un texte alternatif et des dimensions intrinsèques.
+Desktop : photo de 390 px de haut et chevauchement de 100 px avec la carte.
+Jusqu’à 800 px : une colonne, photo de 270 px et aucun chevauchement.
+Email et téléphone obligatoires ; nom facultatif ; labels et autocomplétion présents.
+La validation email utilise validity.typeMismatch du navigateur. Le téléphone
+est vérifié comme non vide, sans imposer un format national arbitraire.
+Les erreurs sont associées aux champs et aria-invalid est retiré après correction.
+Le premier champ incorrect reçoit le focus après une tentative d’envoi.
+Les deux motifs autorisés sont affichés par textContent et conservés dans un
+champ caché ; les valeurs inconnues sont ignorées.
+Aucun service d’envoi : la soumission est interceptée et le statut annonce
+explicitement qu’aucun message n’est envoyé. Aucun stockage local des données.
+
+2. REFACTORISATION ET ACCESSIBILITÉ
+
+27 blocs répétés de header/footer propres aux pages ont été retirés et remplacés
+par des adaptations communes. Les styles de contenu restent regroupés par page.
+Le panier reste à l’intérieur du conteneur : retrait du décalage right: -170px.
+Le footer dispose d’une adaptation commune en deux colonnes sous 1100 px,
+puis en une colonne sous 700 px. La navigation mobile peut revenir à la ligne ;
+les liens ont une hauteur minimale de 44 px et une taille de 14 px.
+Un lien « Aller au contenu » apparaît au focus sur chaque page. Il cible un main
+identifié et focalisable par programme. Le focus des contrôles est visible sur
+fond clair ou sombre (contour bleu et halo blanc).
+La préférence système de réduction des animations est respectée : arrêt du
+scroll doux et de l’animation des boutons concernés.
+Les titres, textes visibles, prix et états de démonstration sont conservés.
+Les noms de fichiers contenant espaces et accents sont conservés pour ne pas
+casser les références existantes ; ils restent un point de maintenance.
+
+3. CONTRÔLES RÉELLEMENT EFFECTUÉS
+
+Analyse locale :
+- Structure et imbrication des balises des cinq pages.
+- Un seul h1 par page et un seul lien actif dans la navigation principale.
+- Présence de aria-current sur le lien actif de chaque page.
+- Identifiants uniques, cibles des ancres et références ARIA existantes.
+- Labels associés aux champs et attributs alt des images HTML.
+- Existence des ressources HTML, CSS, images de fond et fichiers des produits.
+- Existence des destinations des liens entre les cinq pages.
+- Équilibre des délimiteurs CSS ; ce contrôle seul n’est pas un validateur W3C.
+
+Chrome réel en mode sans interface, fichiers locaux :
+- 5 pages × 9 largeurs = 45 cas.
+- Largeurs : 320, 375, 700, 768, 800, 801, 1000, 1100 et 1440 px.
+- Aucun débordement horizontal mesuré sur le document aux largeurs testées.
+- Aucune image HTML non chargée détectée dans ces cas.
+- Contact : hauteur de photo et marge calculées vérifiées à 375, 800, 801 et
+  1440 px ; passage de 270 px sans chevauchement à 390 px avec marge -100 px.
+- Boutique : tri croissant 35/35/45/45/45 ; décroissant 45/45/45/35/35 ; retour
+  à l’ordre initial confirmé en déclenchant l’événement change du sélecteur.
+- Contact : soumission vide refusée ; email incorrect et téléphone constitué
+  d’espaces refusés ; valeurs valides acceptées en démonstration.
+- Tests répétés sans motif, avec projet-textile, affiliation et valeur inconnue.
+- Aucun statut « Message envoyé » ; le statut final annonce l’absence d’envoi.
+- Capture desktop Contact examinée : photographie visible, angles arrondis,
+  carte au-dessus du haut de la photo, formulaire et textes lisibles.
+
+Limites : les 45 cas mesurent le rendu dans des iframes de largeur contrôlée.
+Ils ne remplacent pas un essai tactile sur téléphone, Safari/Firefox, un parcours
+complet au clavier ni l’usage d’un lecteur d’écran. Aucun audit automatisé WCAG
+complet, mesure exhaustive des contrastes ou validation W3C n’a été effectué.
+Le contrôle d’absence de débordement ne garantit pas à lui seul tous les cadrages.
+
+4. PLAN D’ACTION POUR LA PRÉSENTATION AU JURY
+
+P1 — Fonctionnement réel
+- Choisir et connecter un service d’envoi avant de présenter le formulaire comme
+  opérationnel ; conserver l’annonce de démonstration tant que ce n’est pas fait.
+- Définir le parcours panier et les règles d’affiliation avant de les développer.
+
+P2 — Contenu et usages
+- Fournir le visuel YA FOYE et le t-shirt Monument DKR seul.
+- Valider la répartition des produits entre les catégories.
+- Vérifier au clavier (Tab/Maj+Tab/Entrée), à 200 % de zoom et sur appareil mobile.
+- Vérifier les contrastes sur les photographies et faire un essai avec VoiceOver.
+
+P3 — Finitions
+- Différencier les textes des six valeurs après validation éditoriale.
+- Ajouter les icônes manquantes et URL sociales lorsqu’elles seront fournies.
+- Prévoir l’optimisation des images volumineuses sans sacrifier leur qualité.
+
+EXPLICATION SIMPLE POUR LE JURY
+Le HTML décrit le contenu et les liens. Le CSS commun gère les éléments répétés,
+puis chaque page possède ses propres styles. Les media queries adaptent la mise
+en page à la largeur disponible. JavaScript permet le tri et la validation locale,
+mais il ne remplace pas un serveur d’envoi ou un système de paiement.
+Les tests prouvent les comportements effectivement vérifiés, et les limites sont
+annoncées pour distinguer une démonstration d’un service réellement connecté.
