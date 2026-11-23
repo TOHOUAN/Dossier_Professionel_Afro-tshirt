@@ -1,0 +1,2504 @@
+[
+  {
+    "name": "index.html à 320px",
+    "passed": true,
+    "page": "index.html",
+    "width": 320,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu index.html à 320px",
+    "passed": true,
+    "page": "index.html",
+    "width": 320
+  },
+  {
+    "name": "index.html à 375px",
+    "passed": true,
+    "page": "index.html",
+    "width": 375,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu index.html à 375px",
+    "passed": true,
+    "page": "index.html",
+    "width": 375
+  },
+  {
+    "name": "index.html à 390px",
+    "passed": true,
+    "page": "index.html",
+    "width": 390,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu index.html à 390px",
+    "passed": true,
+    "page": "index.html",
+    "width": 390
+  },
+  {
+    "name": "index.html à 430px",
+    "passed": true,
+    "page": "index.html",
+    "width": 430,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu index.html à 430px",
+    "passed": true,
+    "page": "index.html",
+    "width": 430
+  },
+  {
+    "name": "index.html à 768px",
+    "passed": true,
+    "page": "index.html",
+    "width": 768,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop index.html à 768px",
+    "passed": true,
+    "page": "index.html",
+    "width": 768
+  },
+  {
+    "name": "index.html à 1024px",
+    "passed": true,
+    "page": "index.html",
+    "width": 1024,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop index.html à 1024px",
+    "passed": true,
+    "page": "index.html",
+    "width": 1024
+  },
+  {
+    "name": "index.html à 1440px",
+    "passed": true,
+    "page": "index.html",
+    "width": 1440,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop index.html à 1440px",
+    "passed": true,
+    "page": "index.html",
+    "width": 1440
+  },
+  {
+    "name": "boutique.html à 320px",
+    "passed": true,
+    "page": "boutique.html",
+    "width": 320,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu boutique.html à 320px",
+    "passed": true,
+    "page": "boutique.html",
+    "width": 320
+  },
+  {
+    "name": "boutique.html à 375px",
+    "passed": true,
+    "page": "boutique.html",
+    "width": 375,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu boutique.html à 375px",
+    "passed": true,
+    "page": "boutique.html",
+    "width": 375
+  },
+  {
+    "name": "boutique.html à 390px",
+    "passed": true,
+    "page": "boutique.html",
+    "width": 390,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu boutique.html à 390px",
+    "passed": true,
+    "page": "boutique.html",
+    "width": 390
+  },
+  {
+    "name": "boutique.html à 430px",
+    "passed": true,
+    "page": "boutique.html",
+    "width": 430,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu boutique.html à 430px",
+    "passed": true,
+    "page": "boutique.html",
+    "width": 430
+  },
+  {
+    "name": "boutique.html à 768px",
+    "passed": true,
+    "page": "boutique.html",
+    "width": 768,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop boutique.html à 768px",
+    "passed": true,
+    "page": "boutique.html",
+    "width": 768
+  },
+  {
+    "name": "boutique.html à 1024px",
+    "passed": true,
+    "page": "boutique.html",
+    "width": 1024,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop boutique.html à 1024px",
+    "passed": true,
+    "page": "boutique.html",
+    "width": 1024
+  },
+  {
+    "name": "boutique.html à 1440px",
+    "passed": true,
+    "page": "boutique.html",
+    "width": 1440,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop boutique.html à 1440px",
+    "passed": true,
+    "page": "boutique.html",
+    "width": 1440
+  },
+  {
+    "name": "a-propos.html à 320px",
+    "passed": true,
+    "page": "a-propos.html",
+    "width": 320,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu a-propos.html à 320px",
+    "passed": true,
+    "page": "a-propos.html",
+    "width": 320
+  },
+  {
+    "name": "a-propos.html à 375px",
+    "passed": true,
+    "page": "a-propos.html",
+    "width": 375,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu a-propos.html à 375px",
+    "passed": true,
+    "page": "a-propos.html",
+    "width": 375
+  },
+  {
+    "name": "a-propos.html à 390px",
+    "passed": true,
+    "page": "a-propos.html",
+    "width": 390,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu a-propos.html à 390px",
+    "passed": true,
+    "page": "a-propos.html",
+    "width": 390
+  },
+  {
+    "name": "a-propos.html à 430px",
+    "passed": true,
+    "page": "a-propos.html",
+    "width": 430,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu a-propos.html à 430px",
+    "passed": true,
+    "page": "a-propos.html",
+    "width": 430
+  },
+  {
+    "name": "a-propos.html à 768px",
+    "passed": true,
+    "page": "a-propos.html",
+    "width": 768,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop a-propos.html à 768px",
+    "passed": true,
+    "page": "a-propos.html",
+    "width": 768
+  },
+  {
+    "name": "a-propos.html à 1024px",
+    "passed": true,
+    "page": "a-propos.html",
+    "width": 1024,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop a-propos.html à 1024px",
+    "passed": true,
+    "page": "a-propos.html",
+    "width": 1024
+  },
+  {
+    "name": "a-propos.html à 1440px",
+    "passed": true,
+    "page": "a-propos.html",
+    "width": 1440,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop a-propos.html à 1440px",
+    "passed": true,
+    "page": "a-propos.html",
+    "width": 1440
+  },
+  {
+    "name": "nous-rejoindre.html à 320px",
+    "passed": true,
+    "page": "nous-rejoindre.html",
+    "width": 320,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu nous-rejoindre.html à 320px",
+    "passed": true,
+    "page": "nous-rejoindre.html",
+    "width": 320
+  },
+  {
+    "name": "nous-rejoindre.html à 375px",
+    "passed": true,
+    "page": "nous-rejoindre.html",
+    "width": 375,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu nous-rejoindre.html à 375px",
+    "passed": true,
+    "page": "nous-rejoindre.html",
+    "width": 375
+  },
+  {
+    "name": "nous-rejoindre.html à 390px",
+    "passed": true,
+    "page": "nous-rejoindre.html",
+    "width": 390,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu nous-rejoindre.html à 390px",
+    "passed": true,
+    "page": "nous-rejoindre.html",
+    "width": 390
+  },
+  {
+    "name": "nous-rejoindre.html à 430px",
+    "passed": true,
+    "page": "nous-rejoindre.html",
+    "width": 430,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu nous-rejoindre.html à 430px",
+    "passed": true,
+    "page": "nous-rejoindre.html",
+    "width": 430
+  },
+  {
+    "name": "nous-rejoindre.html à 768px",
+    "passed": true,
+    "page": "nous-rejoindre.html",
+    "width": 768,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop nous-rejoindre.html à 768px",
+    "passed": true,
+    "page": "nous-rejoindre.html",
+    "width": 768
+  },
+  {
+    "name": "nous-rejoindre.html à 1024px",
+    "passed": true,
+    "page": "nous-rejoindre.html",
+    "width": 1024,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop nous-rejoindre.html à 1024px",
+    "passed": true,
+    "page": "nous-rejoindre.html",
+    "width": 1024
+  },
+  {
+    "name": "nous-rejoindre.html à 1440px",
+    "passed": true,
+    "page": "nous-rejoindre.html",
+    "width": 1440,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop nous-rejoindre.html à 1440px",
+    "passed": true,
+    "page": "nous-rejoindre.html",
+    "width": 1440
+  },
+  {
+    "name": "contact.html à 320px",
+    "passed": true,
+    "page": "contact.html",
+    "width": 320,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu contact.html à 320px",
+    "passed": true,
+    "page": "contact.html",
+    "width": 320
+  },
+  {
+    "name": "contact.html à 375px",
+    "passed": true,
+    "page": "contact.html",
+    "width": 375,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu contact.html à 375px",
+    "passed": true,
+    "page": "contact.html",
+    "width": 375
+  },
+  {
+    "name": "contact.html à 390px",
+    "passed": true,
+    "page": "contact.html",
+    "width": 390,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu contact.html à 390px",
+    "passed": true,
+    "page": "contact.html",
+    "width": 390
+  },
+  {
+    "name": "contact.html à 430px",
+    "passed": true,
+    "page": "contact.html",
+    "width": 430,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu contact.html à 430px",
+    "passed": true,
+    "page": "contact.html",
+    "width": 430
+  },
+  {
+    "name": "contact.html à 768px",
+    "passed": true,
+    "page": "contact.html",
+    "width": 768,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop contact.html à 768px",
+    "passed": true,
+    "page": "contact.html",
+    "width": 768
+  },
+  {
+    "name": "contact.html à 1024px",
+    "passed": true,
+    "page": "contact.html",
+    "width": 1024,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop contact.html à 1024px",
+    "passed": true,
+    "page": "contact.html",
+    "width": 1024
+  },
+  {
+    "name": "contact.html à 1440px",
+    "passed": true,
+    "page": "contact.html",
+    "width": 1440,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop contact.html à 1440px",
+    "passed": true,
+    "page": "contact.html",
+    "width": 1440
+  },
+  {
+    "name": "contact.html?objet=projet-textile à 320px",
+    "passed": true,
+    "page": "contact.html?objet=projet-textile",
+    "width": 320,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu contact.html?objet=projet-textile à 320px",
+    "passed": true,
+    "page": "contact.html?objet=projet-textile",
+    "width": 320
+  },
+  {
+    "name": "contact.html?objet=projet-textile à 375px",
+    "passed": true,
+    "page": "contact.html?objet=projet-textile",
+    "width": 375,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu contact.html?objet=projet-textile à 375px",
+    "passed": true,
+    "page": "contact.html?objet=projet-textile",
+    "width": 375
+  },
+  {
+    "name": "contact.html?objet=projet-textile à 390px",
+    "passed": true,
+    "page": "contact.html?objet=projet-textile",
+    "width": 390,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu contact.html?objet=projet-textile à 390px",
+    "passed": true,
+    "page": "contact.html?objet=projet-textile",
+    "width": 390
+  },
+  {
+    "name": "contact.html?objet=projet-textile à 430px",
+    "passed": true,
+    "page": "contact.html?objet=projet-textile",
+    "width": 430,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu contact.html?objet=projet-textile à 430px",
+    "passed": true,
+    "page": "contact.html?objet=projet-textile",
+    "width": 430
+  },
+  {
+    "name": "contact.html?objet=projet-textile à 768px",
+    "passed": true,
+    "page": "contact.html?objet=projet-textile",
+    "width": 768,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop contact.html?objet=projet-textile à 768px",
+    "passed": true,
+    "page": "contact.html?objet=projet-textile",
+    "width": 768
+  },
+  {
+    "name": "contact.html?objet=projet-textile à 1024px",
+    "passed": true,
+    "page": "contact.html?objet=projet-textile",
+    "width": 1024,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop contact.html?objet=projet-textile à 1024px",
+    "passed": true,
+    "page": "contact.html?objet=projet-textile",
+    "width": 1024
+  },
+  {
+    "name": "contact.html?objet=projet-textile à 1440px",
+    "passed": true,
+    "page": "contact.html?objet=projet-textile",
+    "width": 1440,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop contact.html?objet=projet-textile à 1440px",
+    "passed": true,
+    "page": "contact.html?objet=projet-textile",
+    "width": 1440
+  },
+  {
+    "name": "contact.html?objet=affiliation à 320px",
+    "passed": true,
+    "page": "contact.html?objet=affiliation",
+    "width": 320,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu contact.html?objet=affiliation à 320px",
+    "passed": true,
+    "page": "contact.html?objet=affiliation",
+    "width": 320
+  },
+  {
+    "name": "contact.html?objet=affiliation à 375px",
+    "passed": true,
+    "page": "contact.html?objet=affiliation",
+    "width": 375,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu contact.html?objet=affiliation à 375px",
+    "passed": true,
+    "page": "contact.html?objet=affiliation",
+    "width": 375
+  },
+  {
+    "name": "contact.html?objet=affiliation à 390px",
+    "passed": true,
+    "page": "contact.html?objet=affiliation",
+    "width": 390,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu contact.html?objet=affiliation à 390px",
+    "passed": true,
+    "page": "contact.html?objet=affiliation",
+    "width": 390
+  },
+  {
+    "name": "contact.html?objet=affiliation à 430px",
+    "passed": true,
+    "page": "contact.html?objet=affiliation",
+    "width": 430,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu contact.html?objet=affiliation à 430px",
+    "passed": true,
+    "page": "contact.html?objet=affiliation",
+    "width": 430
+  },
+  {
+    "name": "contact.html?objet=affiliation à 768px",
+    "passed": true,
+    "page": "contact.html?objet=affiliation",
+    "width": 768,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop contact.html?objet=affiliation à 768px",
+    "passed": true,
+    "page": "contact.html?objet=affiliation",
+    "width": 768
+  },
+  {
+    "name": "contact.html?objet=affiliation à 1024px",
+    "passed": true,
+    "page": "contact.html?objet=affiliation",
+    "width": 1024,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop contact.html?objet=affiliation à 1024px",
+    "passed": true,
+    "page": "contact.html?objet=affiliation",
+    "width": 1024
+  },
+  {
+    "name": "contact.html?objet=affiliation à 1440px",
+    "passed": true,
+    "page": "contact.html?objet=affiliation",
+    "width": 1440,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop contact.html?objet=affiliation à 1440px",
+    "passed": true,
+    "page": "contact.html?objet=affiliation",
+    "width": 1440
+  },
+  {
+    "name": "contact.html?objet=inconnu à 320px",
+    "passed": true,
+    "page": "contact.html?objet=inconnu",
+    "width": 320,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu contact.html?objet=inconnu à 320px",
+    "passed": true,
+    "page": "contact.html?objet=inconnu",
+    "width": 320
+  },
+  {
+    "name": "contact.html?objet=inconnu à 375px",
+    "passed": true,
+    "page": "contact.html?objet=inconnu",
+    "width": 375,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu contact.html?objet=inconnu à 375px",
+    "passed": true,
+    "page": "contact.html?objet=inconnu",
+    "width": 375
+  },
+  {
+    "name": "contact.html?objet=inconnu à 390px",
+    "passed": true,
+    "page": "contact.html?objet=inconnu",
+    "width": 390,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu contact.html?objet=inconnu à 390px",
+    "passed": true,
+    "page": "contact.html?objet=inconnu",
+    "width": 390
+  },
+  {
+    "name": "contact.html?objet=inconnu à 430px",
+    "passed": true,
+    "page": "contact.html?objet=inconnu",
+    "width": 430,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu contact.html?objet=inconnu à 430px",
+    "passed": true,
+    "page": "contact.html?objet=inconnu",
+    "width": 430
+  },
+  {
+    "name": "contact.html?objet=inconnu à 768px",
+    "passed": true,
+    "page": "contact.html?objet=inconnu",
+    "width": 768,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop contact.html?objet=inconnu à 768px",
+    "passed": true,
+    "page": "contact.html?objet=inconnu",
+    "width": 768
+  },
+  {
+    "name": "contact.html?objet=inconnu à 1024px",
+    "passed": true,
+    "page": "contact.html?objet=inconnu",
+    "width": 1024,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop contact.html?objet=inconnu à 1024px",
+    "passed": true,
+    "page": "contact.html?objet=inconnu",
+    "width": 1024
+  },
+  {
+    "name": "contact.html?objet=inconnu à 1440px",
+    "passed": true,
+    "page": "contact.html?objet=inconnu",
+    "width": 1440,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop contact.html?objet=inconnu à 1440px",
+    "passed": true,
+    "page": "contact.html?objet=inconnu",
+    "width": 1440
+  },
+  {
+    "name": "produit.html?id=elephants à 320px",
+    "passed": true,
+    "page": "produit.html?id=elephants",
+    "width": 320,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu produit.html?id=elephants à 320px",
+    "passed": true,
+    "page": "produit.html?id=elephants",
+    "width": 320
+  },
+  {
+    "name": "produit.html?id=elephants à 375px",
+    "passed": true,
+    "page": "produit.html?id=elephants",
+    "width": 375,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu produit.html?id=elephants à 375px",
+    "passed": true,
+    "page": "produit.html?id=elephants",
+    "width": 375
+  },
+  {
+    "name": "produit.html?id=elephants à 390px",
+    "passed": true,
+    "page": "produit.html?id=elephants",
+    "width": 390,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu produit.html?id=elephants à 390px",
+    "passed": true,
+    "page": "produit.html?id=elephants",
+    "width": 390
+  },
+  {
+    "name": "produit.html?id=elephants à 430px",
+    "passed": true,
+    "page": "produit.html?id=elephants",
+    "width": 430,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu produit.html?id=elephants à 430px",
+    "passed": true,
+    "page": "produit.html?id=elephants",
+    "width": 430
+  },
+  {
+    "name": "produit.html?id=elephants à 768px",
+    "passed": true,
+    "page": "produit.html?id=elephants",
+    "width": 768,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop produit.html?id=elephants à 768px",
+    "passed": true,
+    "page": "produit.html?id=elephants",
+    "width": 768
+  },
+  {
+    "name": "produit.html?id=elephants à 1024px",
+    "passed": true,
+    "page": "produit.html?id=elephants",
+    "width": 1024,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop produit.html?id=elephants à 1024px",
+    "passed": true,
+    "page": "produit.html?id=elephants",
+    "width": 1024
+  },
+  {
+    "name": "produit.html?id=elephants à 1440px",
+    "passed": true,
+    "page": "produit.html?id=elephants",
+    "width": 1440,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop produit.html?id=elephants à 1440px",
+    "passed": true,
+    "page": "produit.html?id=elephants",
+    "width": 1440
+  },
+  {
+    "name": "produit.html?id=lions à 320px",
+    "passed": true,
+    "page": "produit.html?id=lions",
+    "width": 320,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu produit.html?id=lions à 320px",
+    "passed": true,
+    "page": "produit.html?id=lions",
+    "width": 320
+  },
+  {
+    "name": "produit.html?id=lions à 375px",
+    "passed": true,
+    "page": "produit.html?id=lions",
+    "width": 375,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu produit.html?id=lions à 375px",
+    "passed": true,
+    "page": "produit.html?id=lions",
+    "width": 375
+  },
+  {
+    "name": "produit.html?id=lions à 390px",
+    "passed": true,
+    "page": "produit.html?id=lions",
+    "width": 390,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu produit.html?id=lions à 390px",
+    "passed": true,
+    "page": "produit.html?id=lions",
+    "width": 390
+  },
+  {
+    "name": "produit.html?id=lions à 430px",
+    "passed": true,
+    "page": "produit.html?id=lions",
+    "width": 430,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu produit.html?id=lions à 430px",
+    "passed": true,
+    "page": "produit.html?id=lions",
+    "width": 430
+  },
+  {
+    "name": "produit.html?id=lions à 768px",
+    "passed": true,
+    "page": "produit.html?id=lions",
+    "width": 768,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop produit.html?id=lions à 768px",
+    "passed": true,
+    "page": "produit.html?id=lions",
+    "width": 768
+  },
+  {
+    "name": "produit.html?id=lions à 1024px",
+    "passed": true,
+    "page": "produit.html?id=lions",
+    "width": 1024,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop produit.html?id=lions à 1024px",
+    "passed": true,
+    "page": "produit.html?id=lions",
+    "width": 1024
+  },
+  {
+    "name": "produit.html?id=lions à 1440px",
+    "passed": true,
+    "page": "produit.html?id=lions",
+    "width": 1440,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop produit.html?id=lions à 1440px",
+    "passed": true,
+    "page": "produit.html?id=lions",
+    "width": 1440
+  },
+  {
+    "name": "produit.html?id=leopards à 320px",
+    "passed": true,
+    "page": "produit.html?id=leopards",
+    "width": 320,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu produit.html?id=leopards à 320px",
+    "passed": true,
+    "page": "produit.html?id=leopards",
+    "width": 320
+  },
+  {
+    "name": "produit.html?id=leopards à 375px",
+    "passed": true,
+    "page": "produit.html?id=leopards",
+    "width": 375,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu produit.html?id=leopards à 375px",
+    "passed": true,
+    "page": "produit.html?id=leopards",
+    "width": 375
+  },
+  {
+    "name": "produit.html?id=leopards à 390px",
+    "passed": true,
+    "page": "produit.html?id=leopards",
+    "width": 390,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu produit.html?id=leopards à 390px",
+    "passed": true,
+    "page": "produit.html?id=leopards",
+    "width": 390
+  },
+  {
+    "name": "produit.html?id=leopards à 430px",
+    "passed": true,
+    "page": "produit.html?id=leopards",
+    "width": 430,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu produit.html?id=leopards à 430px",
+    "passed": true,
+    "page": "produit.html?id=leopards",
+    "width": 430
+  },
+  {
+    "name": "produit.html?id=leopards à 768px",
+    "passed": true,
+    "page": "produit.html?id=leopards",
+    "width": 768,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop produit.html?id=leopards à 768px",
+    "passed": true,
+    "page": "produit.html?id=leopards",
+    "width": 768
+  },
+  {
+    "name": "produit.html?id=leopards à 1024px",
+    "passed": true,
+    "page": "produit.html?id=leopards",
+    "width": 1024,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop produit.html?id=leopards à 1024px",
+    "passed": true,
+    "page": "produit.html?id=leopards",
+    "width": 1024
+  },
+  {
+    "name": "produit.html?id=leopards à 1440px",
+    "passed": true,
+    "page": "produit.html?id=leopards",
+    "width": 1440,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop produit.html?id=leopards à 1440px",
+    "passed": true,
+    "page": "produit.html?id=leopards",
+    "width": 1440
+  },
+  {
+    "name": "produit.html?id=ya-foye à 320px",
+    "passed": true,
+    "page": "produit.html?id=ya-foye",
+    "width": 320,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu produit.html?id=ya-foye à 320px",
+    "passed": true,
+    "page": "produit.html?id=ya-foye",
+    "width": 320
+  },
+  {
+    "name": "produit.html?id=ya-foye à 375px",
+    "passed": true,
+    "page": "produit.html?id=ya-foye",
+    "width": 375,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu produit.html?id=ya-foye à 375px",
+    "passed": true,
+    "page": "produit.html?id=ya-foye",
+    "width": 375
+  },
+  {
+    "name": "produit.html?id=ya-foye à 390px",
+    "passed": true,
+    "page": "produit.html?id=ya-foye",
+    "width": 390,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu produit.html?id=ya-foye à 390px",
+    "passed": true,
+    "page": "produit.html?id=ya-foye",
+    "width": 390
+  },
+  {
+    "name": "produit.html?id=ya-foye à 430px",
+    "passed": true,
+    "page": "produit.html?id=ya-foye",
+    "width": 430,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu produit.html?id=ya-foye à 430px",
+    "passed": true,
+    "page": "produit.html?id=ya-foye",
+    "width": 430
+  },
+  {
+    "name": "produit.html?id=ya-foye à 768px",
+    "passed": true,
+    "page": "produit.html?id=ya-foye",
+    "width": 768,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop produit.html?id=ya-foye à 768px",
+    "passed": true,
+    "page": "produit.html?id=ya-foye",
+    "width": 768
+  },
+  {
+    "name": "produit.html?id=ya-foye à 1024px",
+    "passed": true,
+    "page": "produit.html?id=ya-foye",
+    "width": 1024,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop produit.html?id=ya-foye à 1024px",
+    "passed": true,
+    "page": "produit.html?id=ya-foye",
+    "width": 1024
+  },
+  {
+    "name": "produit.html?id=ya-foye à 1440px",
+    "passed": true,
+    "page": "produit.html?id=ya-foye",
+    "width": 1440,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop produit.html?id=ya-foye à 1440px",
+    "passed": true,
+    "page": "produit.html?id=ya-foye",
+    "width": 1440
+  },
+  {
+    "name": "produit.html?id=inconnu à 320px",
+    "passed": true,
+    "page": "produit.html?id=inconnu",
+    "width": 320,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu produit.html?id=inconnu à 320px",
+    "passed": true,
+    "page": "produit.html?id=inconnu",
+    "width": 320
+  },
+  {
+    "name": "produit.html?id=inconnu à 375px",
+    "passed": true,
+    "page": "produit.html?id=inconnu",
+    "width": 375,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu produit.html?id=inconnu à 375px",
+    "passed": true,
+    "page": "produit.html?id=inconnu",
+    "width": 375
+  },
+  {
+    "name": "produit.html?id=inconnu à 390px",
+    "passed": true,
+    "page": "produit.html?id=inconnu",
+    "width": 390,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu produit.html?id=inconnu à 390px",
+    "passed": true,
+    "page": "produit.html?id=inconnu",
+    "width": 390
+  },
+  {
+    "name": "produit.html?id=inconnu à 430px",
+    "passed": true,
+    "page": "produit.html?id=inconnu",
+    "width": 430,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu produit.html?id=inconnu à 430px",
+    "passed": true,
+    "page": "produit.html?id=inconnu",
+    "width": 430
+  },
+  {
+    "name": "produit.html?id=inconnu à 768px",
+    "passed": true,
+    "page": "produit.html?id=inconnu",
+    "width": 768,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop produit.html?id=inconnu à 768px",
+    "passed": true,
+    "page": "produit.html?id=inconnu",
+    "width": 768
+  },
+  {
+    "name": "produit.html?id=inconnu à 1024px",
+    "passed": true,
+    "page": "produit.html?id=inconnu",
+    "width": 1024,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop produit.html?id=inconnu à 1024px",
+    "passed": true,
+    "page": "produit.html?id=inconnu",
+    "width": 1024
+  },
+  {
+    "name": "produit.html?id=inconnu à 1440px",
+    "passed": true,
+    "page": "produit.html?id=inconnu",
+    "width": 1440,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop produit.html?id=inconnu à 1440px",
+    "passed": true,
+    "page": "produit.html?id=inconnu",
+    "width": 1440
+  },
+  {
+    "name": "produit.html?id=monument-dkr à 320px",
+    "passed": true,
+    "page": "produit.html?id=monument-dkr",
+    "width": 320,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu produit.html?id=monument-dkr à 320px",
+    "passed": true,
+    "page": "produit.html?id=monument-dkr",
+    "width": 320
+  },
+  {
+    "name": "produit.html?id=monument-dkr à 375px",
+    "passed": true,
+    "page": "produit.html?id=monument-dkr",
+    "width": 375,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu produit.html?id=monument-dkr à 375px",
+    "passed": true,
+    "page": "produit.html?id=monument-dkr",
+    "width": 375
+  },
+  {
+    "name": "produit.html?id=monument-dkr à 390px",
+    "passed": true,
+    "page": "produit.html?id=monument-dkr",
+    "width": 390,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu produit.html?id=monument-dkr à 390px",
+    "passed": true,
+    "page": "produit.html?id=monument-dkr",
+    "width": 390
+  },
+  {
+    "name": "produit.html?id=monument-dkr à 430px",
+    "passed": true,
+    "page": "produit.html?id=monument-dkr",
+    "width": 430,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu produit.html?id=monument-dkr à 430px",
+    "passed": true,
+    "page": "produit.html?id=monument-dkr",
+    "width": 430
+  },
+  {
+    "name": "produit.html?id=monument-dkr à 768px",
+    "passed": true,
+    "page": "produit.html?id=monument-dkr",
+    "width": 768,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop produit.html?id=monument-dkr à 768px",
+    "passed": true,
+    "page": "produit.html?id=monument-dkr",
+    "width": 768
+  },
+  {
+    "name": "produit.html?id=monument-dkr à 1024px",
+    "passed": true,
+    "page": "produit.html?id=monument-dkr",
+    "width": 1024,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop produit.html?id=monument-dkr à 1024px",
+    "passed": true,
+    "page": "produit.html?id=monument-dkr",
+    "width": 1024
+  },
+  {
+    "name": "produit.html?id=monument-dkr à 1440px",
+    "passed": true,
+    "page": "produit.html?id=monument-dkr",
+    "width": 1440,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop produit.html?id=monument-dkr à 1440px",
+    "passed": true,
+    "page": "produit.html?id=monument-dkr",
+    "width": 1440
+  },
+  {
+    "name": "panier.html#vide à 320px",
+    "passed": true,
+    "page": "panier.html#vide",
+    "width": 320,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu panier.html#vide à 320px",
+    "passed": true,
+    "page": "panier.html#vide",
+    "width": 320
+  },
+  {
+    "name": "panier.html#vide à 375px",
+    "passed": true,
+    "page": "panier.html#vide",
+    "width": 375,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu panier.html#vide à 375px",
+    "passed": true,
+    "page": "panier.html#vide",
+    "width": 375
+  },
+  {
+    "name": "panier.html#vide à 390px",
+    "passed": true,
+    "page": "panier.html#vide",
+    "width": 390,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu panier.html#vide à 390px",
+    "passed": true,
+    "page": "panier.html#vide",
+    "width": 390
+  },
+  {
+    "name": "panier.html#vide à 430px",
+    "passed": true,
+    "page": "panier.html#vide",
+    "width": 430,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu panier.html#vide à 430px",
+    "passed": true,
+    "page": "panier.html#vide",
+    "width": 430
+  },
+  {
+    "name": "panier.html#vide à 768px",
+    "passed": true,
+    "page": "panier.html#vide",
+    "width": 768,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop panier.html#vide à 768px",
+    "passed": true,
+    "page": "panier.html#vide",
+    "width": 768
+  },
+  {
+    "name": "panier.html#vide à 1024px",
+    "passed": true,
+    "page": "panier.html#vide",
+    "width": 1024,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop panier.html#vide à 1024px",
+    "passed": true,
+    "page": "panier.html#vide",
+    "width": 1024
+  },
+  {
+    "name": "panier.html#vide à 1440px",
+    "passed": true,
+    "page": "panier.html#vide",
+    "width": 1440,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop panier.html#vide à 1440px",
+    "passed": true,
+    "page": "panier.html#vide",
+    "width": 1440
+  },
+  {
+    "name": "panier.html#rempli à 320px",
+    "passed": true,
+    "page": "panier.html#rempli",
+    "width": 320,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu panier.html#rempli à 320px",
+    "passed": true,
+    "page": "panier.html#rempli",
+    "width": 320
+  },
+  {
+    "name": "panier.html#rempli à 375px",
+    "passed": true,
+    "page": "panier.html#rempli",
+    "width": 375,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu panier.html#rempli à 375px",
+    "passed": true,
+    "page": "panier.html#rempli",
+    "width": 375
+  },
+  {
+    "name": "panier.html#rempli à 390px",
+    "passed": true,
+    "page": "panier.html#rempli",
+    "width": 390,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu panier.html#rempli à 390px",
+    "passed": true,
+    "page": "panier.html#rempli",
+    "width": 390
+  },
+  {
+    "name": "panier.html#rempli à 430px",
+    "passed": true,
+    "page": "panier.html#rempli",
+    "width": 430,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu panier.html#rempli à 430px",
+    "passed": true,
+    "page": "panier.html#rempli",
+    "width": 430
+  },
+  {
+    "name": "panier.html#rempli à 768px",
+    "passed": true,
+    "page": "panier.html#rempli",
+    "width": 768,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop panier.html#rempli à 768px",
+    "passed": true,
+    "page": "panier.html#rempli",
+    "width": 768
+  },
+  {
+    "name": "panier.html#rempli à 1024px",
+    "passed": true,
+    "page": "panier.html#rempli",
+    "width": 1024,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop panier.html#rempli à 1024px",
+    "passed": true,
+    "page": "panier.html#rempli",
+    "width": 1024
+  },
+  {
+    "name": "panier.html#rempli à 1440px",
+    "passed": true,
+    "page": "panier.html#rempli",
+    "width": 1440,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop panier.html#rempli à 1440px",
+    "passed": true,
+    "page": "panier.html#rempli",
+    "width": 1440
+  },
+  {
+    "name": "panier.html#simulation à 320px",
+    "passed": true,
+    "page": "panier.html#simulation",
+    "width": 320,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu panier.html#simulation à 320px",
+    "passed": true,
+    "page": "panier.html#simulation",
+    "width": 320
+  },
+  {
+    "name": "panier.html#simulation à 375px",
+    "passed": true,
+    "page": "panier.html#simulation",
+    "width": 375,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu panier.html#simulation à 375px",
+    "passed": true,
+    "page": "panier.html#simulation",
+    "width": 375
+  },
+  {
+    "name": "panier.html#simulation à 390px",
+    "passed": true,
+    "page": "panier.html#simulation",
+    "width": 390,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu panier.html#simulation à 390px",
+    "passed": true,
+    "page": "panier.html#simulation",
+    "width": 390
+  },
+  {
+    "name": "panier.html#simulation à 430px",
+    "passed": true,
+    "page": "panier.html#simulation",
+    "width": 430,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu panier.html#simulation à 430px",
+    "passed": true,
+    "page": "panier.html#simulation",
+    "width": 430
+  },
+  {
+    "name": "panier.html#simulation à 768px",
+    "passed": true,
+    "page": "panier.html#simulation",
+    "width": 768,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop panier.html#simulation à 768px",
+    "passed": true,
+    "page": "panier.html#simulation",
+    "width": 768
+  },
+  {
+    "name": "panier.html#simulation à 1024px",
+    "passed": true,
+    "page": "panier.html#simulation",
+    "width": 1024,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop panier.html#simulation à 1024px",
+    "passed": true,
+    "page": "panier.html#simulation",
+    "width": 1024
+  },
+  {
+    "name": "panier.html#simulation à 1440px",
+    "passed": true,
+    "page": "panier.html#simulation",
+    "width": 1440,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop panier.html#simulation à 1440px",
+    "passed": true,
+    "page": "panier.html#simulation",
+    "width": 1440
+  },
+  {
+    "name": "panier.html#bilan à 320px",
+    "passed": true,
+    "page": "panier.html#bilan",
+    "width": 320,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu panier.html#bilan à 320px",
+    "passed": true,
+    "page": "panier.html#bilan",
+    "width": 320
+  },
+  {
+    "name": "panier.html#bilan à 375px",
+    "passed": true,
+    "page": "panier.html#bilan",
+    "width": 375,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu panier.html#bilan à 375px",
+    "passed": true,
+    "page": "panier.html#bilan",
+    "width": 375
+  },
+  {
+    "name": "panier.html#bilan à 390px",
+    "passed": true,
+    "page": "panier.html#bilan",
+    "width": 390,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu panier.html#bilan à 390px",
+    "passed": true,
+    "page": "panier.html#bilan",
+    "width": 390
+  },
+  {
+    "name": "panier.html#bilan à 430px",
+    "passed": true,
+    "page": "panier.html#bilan",
+    "width": 430,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Menu panier.html#bilan à 430px",
+    "passed": true,
+    "page": "panier.html#bilan",
+    "width": 430
+  },
+  {
+    "name": "panier.html#bilan à 768px",
+    "passed": true,
+    "page": "panier.html#bilan",
+    "width": 768,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop panier.html#bilan à 768px",
+    "passed": true,
+    "page": "panier.html#bilan",
+    "width": 768
+  },
+  {
+    "name": "panier.html#bilan à 1024px",
+    "passed": true,
+    "page": "panier.html#bilan",
+    "width": 1024,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop panier.html#bilan à 1024px",
+    "passed": true,
+    "page": "panier.html#bilan",
+    "width": 1024
+  },
+  {
+    "name": "panier.html#bilan à 1440px",
+    "passed": true,
+    "page": "panier.html#bilan",
+    "width": 1440,
+    "overflow": false,
+    "clipped": [],
+    "imageErrors": [],
+    "tiny": []
+  },
+  {
+    "name": "Navigation desktop panier.html#bilan à 1440px",
+    "passed": true,
+    "page": "panier.html#bilan",
+    "width": 1440
+  },
+  {
+    "name": "Paysage index.html 667×390",
+    "passed": true,
+    "page": "index.html",
+    "width": 667,
+    "height": 390
+  },
+  {
+    "name": "Paysage index.html 844×390",
+    "passed": true,
+    "page": "index.html",
+    "width": 844,
+    "height": 390
+  },
+  {
+    "name": "Paysage index.html 1024×390",
+    "passed": true,
+    "page": "index.html",
+    "width": 1024,
+    "height": 390
+  },
+  {
+    "name": "Zoom CSS 200 % index.html",
+    "passed": true,
+    "page": "index.html",
+    "method": "CSS zoom, distinct du zoom de l’interface navigateur"
+  },
+  {
+    "name": "Paysage boutique.html 667×390",
+    "passed": true,
+    "page": "boutique.html",
+    "width": 667,
+    "height": 390
+  },
+  {
+    "name": "Paysage boutique.html 844×390",
+    "passed": true,
+    "page": "boutique.html",
+    "width": 844,
+    "height": 390
+  },
+  {
+    "name": "Paysage boutique.html 1024×390",
+    "passed": true,
+    "page": "boutique.html",
+    "width": 1024,
+    "height": 390
+  },
+  {
+    "name": "Zoom CSS 200 % boutique.html",
+    "passed": true,
+    "page": "boutique.html",
+    "method": "CSS zoom, distinct du zoom de l’interface navigateur"
+  },
+  {
+    "name": "Paysage a-propos.html 667×390",
+    "passed": true,
+    "page": "a-propos.html",
+    "width": 667,
+    "height": 390
+  },
+  {
+    "name": "Paysage a-propos.html 844×390",
+    "passed": true,
+    "page": "a-propos.html",
+    "width": 844,
+    "height": 390
+  },
+  {
+    "name": "Paysage a-propos.html 1024×390",
+    "passed": true,
+    "page": "a-propos.html",
+    "width": 1024,
+    "height": 390
+  },
+  {
+    "name": "Zoom CSS 200 % a-propos.html",
+    "passed": true,
+    "page": "a-propos.html",
+    "method": "CSS zoom, distinct du zoom de l’interface navigateur"
+  },
+  {
+    "name": "Paysage nous-rejoindre.html 667×390",
+    "passed": true,
+    "page": "nous-rejoindre.html",
+    "width": 667,
+    "height": 390
+  },
+  {
+    "name": "Paysage nous-rejoindre.html 844×390",
+    "passed": true,
+    "page": "nous-rejoindre.html",
+    "width": 844,
+    "height": 390
+  },
+  {
+    "name": "Paysage nous-rejoindre.html 1024×390",
+    "passed": true,
+    "page": "nous-rejoindre.html",
+    "width": 1024,
+    "height": 390
+  },
+  {
+    "name": "Zoom CSS 200 % nous-rejoindre.html",
+    "passed": true,
+    "page": "nous-rejoindre.html",
+    "method": "CSS zoom, distinct du zoom de l’interface navigateur"
+  },
+  {
+    "name": "Paysage contact.html 667×390",
+    "passed": true,
+    "page": "contact.html",
+    "width": 667,
+    "height": 390
+  },
+  {
+    "name": "Paysage contact.html 844×390",
+    "passed": true,
+    "page": "contact.html",
+    "width": 844,
+    "height": 390
+  },
+  {
+    "name": "Paysage contact.html 1024×390",
+    "passed": true,
+    "page": "contact.html",
+    "width": 1024,
+    "height": 390
+  },
+  {
+    "name": "Zoom CSS 200 % contact.html",
+    "passed": true,
+    "page": "contact.html",
+    "method": "CSS zoom, distinct du zoom de l’interface navigateur"
+  },
+  {
+    "name": "Paysage contact.html?objet=projet-textile 667×390",
+    "passed": true,
+    "page": "contact.html?objet=projet-textile",
+    "width": 667,
+    "height": 390
+  },
+  {
+    "name": "Paysage contact.html?objet=projet-textile 844×390",
+    "passed": true,
+    "page": "contact.html?objet=projet-textile",
+    "width": 844,
+    "height": 390
+  },
+  {
+    "name": "Paysage contact.html?objet=projet-textile 1024×390",
+    "passed": true,
+    "page": "contact.html?objet=projet-textile",
+    "width": 1024,
+    "height": 390
+  },
+  {
+    "name": "Zoom CSS 200 % contact.html?objet=projet-textile",
+    "passed": true,
+    "page": "contact.html?objet=projet-textile",
+    "method": "CSS zoom, distinct du zoom de l’interface navigateur"
+  },
+  {
+    "name": "Paysage contact.html?objet=affiliation 667×390",
+    "passed": true,
+    "page": "contact.html?objet=affiliation",
+    "width": 667,
+    "height": 390
+  },
+  {
+    "name": "Paysage contact.html?objet=affiliation 844×390",
+    "passed": true,
+    "page": "contact.html?objet=affiliation",
+    "width": 844,
+    "height": 390
+  },
+  {
+    "name": "Paysage contact.html?objet=affiliation 1024×390",
+    "passed": true,
+    "page": "contact.html?objet=affiliation",
+    "width": 1024,
+    "height": 390
+  },
+  {
+    "name": "Zoom CSS 200 % contact.html?objet=affiliation",
+    "passed": true,
+    "page": "contact.html?objet=affiliation",
+    "method": "CSS zoom, distinct du zoom de l’interface navigateur"
+  },
+  {
+    "name": "Paysage contact.html?objet=inconnu 667×390",
+    "passed": true,
+    "page": "contact.html?objet=inconnu",
+    "width": 667,
+    "height": 390
+  },
+  {
+    "name": "Paysage contact.html?objet=inconnu 844×390",
+    "passed": true,
+    "page": "contact.html?objet=inconnu",
+    "width": 844,
+    "height": 390
+  },
+  {
+    "name": "Paysage contact.html?objet=inconnu 1024×390",
+    "passed": true,
+    "page": "contact.html?objet=inconnu",
+    "width": 1024,
+    "height": 390
+  },
+  {
+    "name": "Zoom CSS 200 % contact.html?objet=inconnu",
+    "passed": true,
+    "page": "contact.html?objet=inconnu",
+    "method": "CSS zoom, distinct du zoom de l’interface navigateur"
+  },
+  {
+    "name": "Paysage produit.html?id=elephants 667×390",
+    "passed": true,
+    "page": "produit.html?id=elephants",
+    "width": 667,
+    "height": 390
+  },
+  {
+    "name": "Paysage produit.html?id=elephants 844×390",
+    "passed": true,
+    "page": "produit.html?id=elephants",
+    "width": 844,
+    "height": 390
+  },
+  {
+    "name": "Paysage produit.html?id=elephants 1024×390",
+    "passed": true,
+    "page": "produit.html?id=elephants",
+    "width": 1024,
+    "height": 390
+  },
+  {
+    "name": "Zoom CSS 200 % produit.html?id=elephants",
+    "passed": true,
+    "page": "produit.html?id=elephants",
+    "method": "CSS zoom, distinct du zoom de l’interface navigateur"
+  },
+  {
+    "name": "Paysage produit.html?id=lions 667×390",
+    "passed": true,
+    "page": "produit.html?id=lions",
+    "width": 667,
+    "height": 390
+  },
+  {
+    "name": "Paysage produit.html?id=lions 844×390",
+    "passed": true,
+    "page": "produit.html?id=lions",
+    "width": 844,
+    "height": 390
+  },
+  {
+    "name": "Paysage produit.html?id=lions 1024×390",
+    "passed": true,
+    "page": "produit.html?id=lions",
+    "width": 1024,
+    "height": 390
+  },
+  {
+    "name": "Zoom CSS 200 % produit.html?id=lions",
+    "passed": true,
+    "page": "produit.html?id=lions",
+    "method": "CSS zoom, distinct du zoom de l’interface navigateur"
+  },
+  {
+    "name": "Paysage produit.html?id=leopards 667×390",
+    "passed": true,
+    "page": "produit.html?id=leopards",
+    "width": 667,
+    "height": 390
+  },
+  {
+    "name": "Paysage produit.html?id=leopards 844×390",
+    "passed": true,
+    "page": "produit.html?id=leopards",
+    "width": 844,
+    "height": 390
+  },
+  {
+    "name": "Paysage produit.html?id=leopards 1024×390",
+    "passed": true,
+    "page": "produit.html?id=leopards",
+    "width": 1024,
+    "height": 390
+  },
+  {
+    "name": "Zoom CSS 200 % produit.html?id=leopards",
+    "passed": true,
+    "page": "produit.html?id=leopards",
+    "method": "CSS zoom, distinct du zoom de l’interface navigateur"
+  },
+  {
+    "name": "Paysage produit.html?id=ya-foye 667×390",
+    "passed": true,
+    "page": "produit.html?id=ya-foye",
+    "width": 667,
+    "height": 390
+  },
+  {
+    "name": "Paysage produit.html?id=ya-foye 844×390",
+    "passed": true,
+    "page": "produit.html?id=ya-foye",
+    "width": 844,
+    "height": 390
+  },
+  {
+    "name": "Paysage produit.html?id=ya-foye 1024×390",
+    "passed": true,
+    "page": "produit.html?id=ya-foye",
+    "width": 1024,
+    "height": 390
+  },
+  {
+    "name": "Zoom CSS 200 % produit.html?id=ya-foye",
+    "passed": true,
+    "page": "produit.html?id=ya-foye",
+    "method": "CSS zoom, distinct du zoom de l’interface navigateur"
+  },
+  {
+    "name": "Paysage produit.html?id=inconnu 667×390",
+    "passed": true,
+    "page": "produit.html?id=inconnu",
+    "width": 667,
+    "height": 390
+  },
+  {
+    "name": "Paysage produit.html?id=inconnu 844×390",
+    "passed": true,
+    "page": "produit.html?id=inconnu",
+    "width": 844,
+    "height": 390
+  },
+  {
+    "name": "Paysage produit.html?id=inconnu 1024×390",
+    "passed": true,
+    "page": "produit.html?id=inconnu",
+    "width": 1024,
+    "height": 390
+  },
+  {
+    "name": "Zoom CSS 200 % produit.html?id=inconnu",
+    "passed": true,
+    "page": "produit.html?id=inconnu",
+    "method": "CSS zoom, distinct du zoom de l’interface navigateur"
+  },
+  {
+    "name": "Paysage produit.html?id=monument-dkr 667×390",
+    "passed": true,
+    "page": "produit.html?id=monument-dkr",
+    "width": 667,
+    "height": 390
+  },
+  {
+    "name": "Paysage produit.html?id=monument-dkr 844×390",
+    "passed": true,
+    "page": "produit.html?id=monument-dkr",
+    "width": 844,
+    "height": 390
+  },
+  {
+    "name": "Paysage produit.html?id=monument-dkr 1024×390",
+    "passed": true,
+    "page": "produit.html?id=monument-dkr",
+    "width": 1024,
+    "height": 390
+  },
+  {
+    "name": "Zoom CSS 200 % produit.html?id=monument-dkr",
+    "passed": true,
+    "page": "produit.html?id=monument-dkr",
+    "method": "CSS zoom, distinct du zoom de l’interface navigateur"
+  },
+  {
+    "name": "Paysage panier.html#vide 667×390",
+    "passed": true,
+    "page": "panier.html#vide",
+    "width": 667,
+    "height": 390
+  },
+  {
+    "name": "Paysage panier.html#vide 844×390",
+    "passed": true,
+    "page": "panier.html#vide",
+    "width": 844,
+    "height": 390
+  },
+  {
+    "name": "Paysage panier.html#vide 1024×390",
+    "passed": true,
+    "page": "panier.html#vide",
+    "width": 1024,
+    "height": 390
+  },
+  {
+    "name": "Zoom CSS 200 % panier.html#vide",
+    "passed": true,
+    "page": "panier.html#vide",
+    "method": "CSS zoom, distinct du zoom de l’interface navigateur"
+  },
+  {
+    "name": "Paysage panier.html#rempli 667×390",
+    "passed": true,
+    "page": "panier.html#rempli",
+    "width": 667,
+    "height": 390
+  },
+  {
+    "name": "Paysage panier.html#rempli 844×390",
+    "passed": true,
+    "page": "panier.html#rempli",
+    "width": 844,
+    "height": 390
+  },
+  {
+    "name": "Paysage panier.html#rempli 1024×390",
+    "passed": true,
+    "page": "panier.html#rempli",
+    "width": 1024,
+    "height": 390
+  },
+  {
+    "name": "Zoom CSS 200 % panier.html#rempli",
+    "passed": true,
+    "page": "panier.html#rempli",
+    "method": "CSS zoom, distinct du zoom de l’interface navigateur"
+  },
+  {
+    "name": "Paysage panier.html#simulation 667×390",
+    "passed": true,
+    "page": "panier.html#simulation",
+    "width": 667,
+    "height": 390
+  },
+  {
+    "name": "Paysage panier.html#simulation 844×390",
+    "passed": true,
+    "page": "panier.html#simulation",
+    "width": 844,
+    "height": 390
+  },
+  {
+    "name": "Paysage panier.html#simulation 1024×390",
+    "passed": true,
+    "page": "panier.html#simulation",
+    "width": 1024,
+    "height": 390
+  },
+  {
+    "name": "Zoom CSS 200 % panier.html#simulation",
+    "passed": true,
+    "page": "panier.html#simulation",
+    "method": "CSS zoom, distinct du zoom de l’interface navigateur"
+  },
+  {
+    "name": "Paysage panier.html#bilan 667×390",
+    "passed": true,
+    "page": "panier.html#bilan",
+    "width": 667,
+    "height": 390
+  },
+  {
+    "name": "Paysage panier.html#bilan 844×390",
+    "passed": true,
+    "page": "panier.html#bilan",
+    "width": 844,
+    "height": 390
+  },
+  {
+    "name": "Paysage panier.html#bilan 1024×390",
+    "passed": true,
+    "page": "panier.html#bilan",
+    "width": 1024,
+    "height": 390
+  },
+  {
+    "name": "Zoom CSS 200 % panier.html#bilan",
+    "passed": true,
+    "page": "panier.html#bilan",
+    "method": "CSS zoom, distinct du zoom de l’interface navigateur"
+  }
+]

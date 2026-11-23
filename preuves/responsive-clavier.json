@@ -47,6 +47,50 @@
     "nativeChanged": false
   },
   {
+    "test": "repli sans script de navigation",
+    "ok": true
+  },
+  {
+    "test": "taille racine du texte 200 %",
+    "page": "index.html",
+    "ok": true
+  },
+  {
+    "test": "taille racine du texte 200 %",
+    "page": "boutique.html",
+    "ok": true
+  },
+  {
+    "test": "taille racine du texte 200 %",
+    "page": "a-propos.html",
+    "ok": true
+  },
+  {
+    "test": "taille racine du texte 200 %",
+    "page": "nous-rejoindre.html",
+    "ok": true
+  },
+  {
+    "test": "taille racine du texte 200 %",
+    "page": "contact.html?objet=projet-textile",
+    "ok": true
+  },
+  {
+    "test": "taille racine du texte 200 %",
+    "page": "contact.html?objet=affiliation",
+    "ok": true
+  },
+  {
+    "test": "taille racine du texte 200 %",
+    "page": "produit.html?id=elephants",
+    "ok": true
+  },
+  {
+    "test": "taille racine du texte 200 %",
+    "page": "panier.html",
+    "ok": true
+  },
+  {
     "test": "exceptions JavaScript observées pendant les parcours CDP",
     "errors": []
   }

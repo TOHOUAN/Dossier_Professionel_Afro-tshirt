@@ -482,8 +482,6 @@ ul {
         min-height: 580px;
     }
 
-    .hero h1 {
-    }
 
     .manifesto {
         min-height: 500px;
@@ -518,11 +516,7 @@ ul {
         padding: 40px 20px;
     }
 
-    .hero h1 {
-    }
 
-    .hero-subtitle {
-    }
 
     .hero-buttons {
         flex-direction: column;

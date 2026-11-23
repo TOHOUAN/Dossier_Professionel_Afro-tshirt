@@ -1,0 +1,227 @@
+AFRO T-SHIRT — AUDIT ET OPTIMISATION RESPONSIVE
+
+1. PÉRIMÈTRE ET MÉTHODE
+
+Arborescence vérifiée avant intervention : sept pages applicatives (index.html,
+boutique.html, a-propos.html, nous-rejoindre.html, contact.html, produit.html et
+panier.html), style.css et six scripts métier. Les tests locaux existants ont aussi
+été lus. Contact possède trois formulaires réels sélectionnés par URL ; Produit
+utilise le catalogue partagé ; la simulation de commande est dans Panier.
+icon_menu_mobile.svg existe à la racine et panier_01.svg dans image/.
+Leur contenu SVG est valide. Les fichiers et leur casse ont été conservés.
+
+L’intervention reste locale. Aucune opération Git, publication, modification du
+site commercial ou intégration externe. Les fonctions de panier et de simulation
+restent fictives, sans paiement ni envoi de données personnelles.
+
+2. PROBLÈMES ET RISQUES IDENTIFIÉS AVANT MODIFICATION
+
+Confirmés dans le code :
+- Nombreuses tailles de texte en pixels, dont paragraphes et notes à 13 ou 14 px.
+- Hero, manifeste et appel à l’action avec hauteurs fixes pouvant devenir trop
+  petites quand le texte grandit. Des protections mobiles existaient déjà.
+- Navigation mobile présentée en lignes horizontales ; règles communes remplacées
+  dans plusieurs media queries, sans bouton de menu vertical.
+- Mission et valeurs conservant des colonnes étroites en taille intermédiaire,
+  notamment deux sous-colonnes texte/image dans chaque carte de valeurs.
+- Panier petit écran avec image et texte côte à côte, réduisant la place des labels.
+- Polices différentes selon les composants de formulaire ; focus et réduction des
+  animations déjà présents, à conserver.
+- Sections à grands espacements fixes ; largeur de certains paragraphes fixée en px.
+
+Ces constats ne prouvent pas qu’un débordement était présent dans tous les anciens
+rendus. Les risques de chevauchement à l’agrandissement ont été traités, puis la
+version corrigée a été testée. Aucun résultat de test avant modification n’est inventé.
+
+3. FICHIERS MODIFIÉS ET CRÉÉS
+
+Modifiés :
+- index.html, boutique.html, a-propos.html, nous-rejoindre.html, contact.html,
+  produit.html et panier.html : bouton Menu, aria-controls/aria-expanded, ID de la
+  navigation et chargement defer de navigation.js. Le contenu des pages est conservé.
+- style.css : navigation mutualisée, typographie, dimensions et grilles adaptatives,
+  espacements fluides et voiles de contraste. Pas de !important ajouté.
+
+Créés :
+- js/navigation.js : ouverture/fermeture et adaptation du menu.
+- tests/responsive.html et tests/responsive.js : campagne reproductible sans framework.
+- RAPPORT_RESPONSIVE.txt : présent rapport.
+- preuves/responsive-tests.json : résultats des 324 contrôles responsive.
+- preuves/responsive-panier-tests.json : 65 tests métier de non-régression.
+- preuves/responsive-clavier.json : parcours clavier réel, réduction des animations,
+  redimensionnement, repli sans script et agrandissement de texte.
+- preuves/responsive-contrastes.json : rapports mesurés de six paires de couleurs unies.
+- Six captures responsive dans preuves/ : accueil-mobile, menu-mobile,
+  apropos-tablette, contact-mobile, boutique-desktop et panier-mobile
+  (préfixe responsive-, extension .png).
+
+Les six scripts métier, les données catalogue, les images et SVG sont inchangés,
+vérifiés par comparaison d’empreintes avant/après. Les catégories non renseignées
+restent désactivées ; aucune donnée commerciale n’a été inventée.
+
+4. TYPOGRAPHIE ET CONTENEURS
+
+Toutes les déclarations font-size de style.css utilisent rem, ou clamp avec rem/vw.
+La taille racine du navigateur n’est pas bloquée : aucune taille de base forcée en
+pixels ni interdiction de zoom dans les metas viewport.
+Trois variables définissent les titres principaux, les titres de sections et ceux
+des cartes. clamp fournit un minimum lisible et une progression vers le desktop.
+Les titres peuvent revenir à la ligne et les mots longs ont une possibilité de
+coupure ; aucune diminution artificielle de police pour les faire tenir.
+Les paragraphes et notes visibles font au moins 1rem dans les parcours contrôlés
+(16 px avec le réglage standard), avec une hauteur de ligne adaptée au composant.
+Les textes de hero sont limités à 65ch et les paragraphes d’introduction conservent
+leurs conteneurs pour éviter des lignes excessivement longues.
+
+Les conteneurs sont plafonnés à 73.75rem avec des gouttières fluides de 1rem.
+Les sections contenant du texte utilisent des hauteurs minimales et peuvent grandir.
+Les hauteurs d’images restent parfois fixées pour homogénéiser une galerie :
+object-fit préserve leur proportion, contrairement à une hauteur fixe sur un texte.
+Les espacements de plusieurs grandes sections utilisent clamp.
+
+5. NAVIGATION MOBILE ET ACCESSIBILITÉ
+
+Approche mobile first pour la navigation : bouton visible sous 768 px, menu vertical
+qui prend sa place dans le flux et pousse le contenu vers le bas, sans recouvrement.
+Le sac et son compteur restent dans une zone distincte. Les cibles de navigation
+et le bouton ont une hauteur minimale de 44 px.
+
+Le bouton possède un nom accessible, aria-expanded et aria-controls. hidden retire
+les liens du parcours clavier quand le menu est fermé. Ce menu n’est pas un dialogue
+modal : aucun piège de focus n’est introduit. Entrée active le bouton natif ; Tab
+atteint les liens. Échap ferme le menu et ramène le focus au bouton. Un clic extérieur
+ferme aussi le menu. Un changement de largeur remet l’état en cohérence et évite de
+laisser le focus sur un élément devenu masqué.
+Sans navigation.js, les liens restent visibles : le menu est une amélioration
+progressive et non une condition d’accès aux autres pages.
+Le lien d’évitement, le focus commun et prefers-reduced-motion sont conservés.
+
+Les voiles des fonds photographiques sont renforcés pour améliorer la lisibilité,
+notamment sur le hero d’accueil, le hero À propos mobile et les cartes de profils.
+Six paires de couleurs unies ont été mesurées, toutes au-dessus de 4.5:1 : résultat
+exact dans responsive-contrastes.json. Cela ne remplace pas une mesure pixel par
+pixel du contraste sur chaque photographie, chaque position et chaque état.
+
+6. ADAPTATIONS PAR PAGE
+
+Accueil : titres fluides, boutons avec hauteur naturelle et retour à la ligne,
+contenu de hero non enfermé dans une hauteur fixe, footer et appel final adaptatifs.
+Boutique : quatre modèles conservés ; une colonne sur petits mobiles, deux dès
+430 px, puis deux/trois/quatre selon l’espace et les seuils du catalogue existant.
+Images en contain, boutons lisibles et confortables ; tri et filtres inchangés.
+À propos : mission empilée avant de devenir trop étroite ; sur tablette/mobile,
+les cartes de valeurs placent la photo au-dessus du texte au lieu de deux petites
+sous-colonnes. Les images d’ambiance gardent leur proportion avec cover.
+Nous rejoindre : cartes et boutons adaptés, sections sans hauteur bloquante,
+voiles plus lisibles sur images. Ancres et liens métiers préservés.
+Contact : une colonne sous 1024 px, champs et légendes autorisés à rétrécir et
+revenir à la ligne, téléphone input conservé, trois formulaires inchangés.
+La photo de palmiers conserve une marge positive et ne recouvre aucun formulaire.
+Produit : une colonne sous 1024 px, produits entiers en contain, titre adaptable,
+liens des modèles et états introuvable/indisponible conservés.
+Panier : une colonne pour les articles et totaux sous 1024 px ; sous 768 px, chaque
+ligne place l’image au-dessus des informations pour garder des labels lisibles.
+Quantités, erreurs, suppression et simulation restent accessibles.
+
+7. BREAKPOINTS ET JUSTIFICATION
+
+La navigation repart du mobile, puis passe au desktop à 768 px.
+Le seuil 1024 px permet de retrouver le logo et les compositions desktop plus larges.
+Les règles héritées sont migrées de 700 vers 767 px et de 1000 vers 1023 px afin
+d’éviter une bande de comportement inattendue entre mobile et tablette.
+Contact, Produit et Panier passent en une colonne sous 1024 px selon leur besoin réel
+de largeur, pas seulement selon une catégorie d’appareil.
+Les seuils spécifiques déjà utiles restent : 1100 px pour la place du footer et le
+nombre de cartes Boutique, 900 px pour le catalogue avec sa colonne latérale,
+400 px pour certains visuels du catalogue. 430 px autorise deux cartes lorsque la
+largeur est suffisante. Une largeur seule ne définit pas un type d’appareil.
+
+Le CSS existant n’a pas été intégralement réécrit : la migration mobile first est
+progressive. Le header est centralisé ; les styles de contenu restent regroupés
+par page. Les media queries existantes utiles sont conservées ; aucune règle
+!important ni masquage global de débordement horizontal n’est employé.
+
+8. TESTS RÉELLEMENT EXÉCUTÉS
+
+Chrome réel en mode sans interface, serveur local 127.0.0.1 et profils de test isolés.
+La clé du panier est restaurée par les tests. Aucun service externe n’est appelé.
+
+324 contrôles responsive réussis :
+- 18 pages/états × 7 largeurs = 126 contrôles de rendu.
+  Largeurs : 320, 375, 390, 430, 768, 1024 et 1440 px.
+  États : Accueil, Boutique, À propos, Nous rejoindre ; quatre URL Contact ; les
+  quatre fiches, ID inconnu et produit retiré ; panier vide/rempli, simulation et bilan.
+- À chaque configuration : aucun débordement horizontal du document, aucune image
+  HTML non chargée, aucun titre/texte/label/bouton visé par le contrôle de clipping
+  ne dépassant son propre bloc ; paragraphes visibles d’au moins 16 px par défaut.
+  Le statut destiné uniquement au lecteur d’écran est volontairement exclu du
+  contrôle de clipping visuel, car il doit justement rester masqué aux voyants.
+- 126 contrôles associés de navigation : état initial, ouverture, présentation
+  verticale et Échap sous 768 px ; navigation visible sans bouton au-dessus.
+- 18 états × 3 largeurs paysage, hauteur 390 px = 54 contrôles sans débordement.
+  Largeurs paysage : 667, 844 et 1024 px.
+- 18 essais avec CSS zoom:2 à 1440 px, sans débordement horizontal.
+
+65 tests métier existants réexécutés : tous réussis.
+Panier persistant, quantités, erreurs, suppression, calculs, deux onglets,
+stockage corrompu ou bloqué, simulation fictive, tri, fiches et Contact obligatoire.
+Les scripts métier et leurs données sont inchangés.
+
+Contrôles réels supplémentaires via Chrome DevTools Protocol :
+- Tab atteint le lien d’évitement, le logo puis Menu avec un focus visible.
+- Entrée ouvre le menu ; Tab atteint le premier lien ; Échap ferme et rend le focus.
+- Redimensionner un menu ouvert vers desktop affiche correctement la navigation.
+- En bloquant le chargement de navigation.js, les liens restent visibles sur mobile.
+- prefers-reduced-motion: reduce donne scroll-behavior:auto et transition:0s.
+- Texte racine agrandi à 200 % sur huit parcours, sans débordement horizontal.
+- Aucune exception JavaScript observée par CDP pendant ces parcours.
+
+Captures examinées : accueil et menu ouverts sur mobile, À propos à 768 px,
+formulaire Affiliation à 390 px, Boutique à 1440 px et panier rempli à 375 px.
+Les images correspondantes sont conservées dans preuves/.
+
+Contrôles statiques : sept HTML correctement imbriqués, un h1 par page, identifiants
+uniques, références ARIA et ancres valides, ressources existantes et scripts defer.
+Délimiteurs CSS équilibrés, polices sans tailles en pixels et aucun !important.
+Ce contrôle de syntaxe n’est pas une certification de conformité W3C.
+
+9. ZOOM À 200 % : DISTINCTION IMPORTANTE
+
+Le raccourci de zoom natif tenté dans Chrome sans interface n’a pas modifié la largeur
+CSS ni devicePixelRatio. Il n’est donc PAS déclaré validé.
+Les essais de zoom CSS à 200 % et de taille de texte à 200 % ont réellement été exécutés,
+mais ne sont pas identiques au zoom de l’interface du navigateur.
+Il reste à ouvrir le site dans Chrome/Safari avec interface, régler explicitement le
+zoom à 200 %, puis parcourir les pages, formulaires et panier. Cette limite est assumée.
+
+10. LIMITES ET SUITES
+
+Les tests de largeur utilisent des iframes Chrome, pas des appareils physiques.
+Un test tactile Android/iPhone, Safari/Firefox et VoiceOver reste à faire.
+Le menu a été testé avec de vraies touches ; cela ne certifie pas un parcours complet
+au clavier de chaque champ et chaque action sur toutes les pages.
+Les captures ne montrent pas chaque bloc de toutes les pages : elles sont complétées
+par des mesures automatisées, qui ne remplacent pas le jugement visuel.
+Les photos sont mieux assombries mais leur contraste n’a pas fait l’objet d’un audit
+exhaustif sur tous les pixels. Aucune certification WCAG complète n’est annoncée.
+Les catégories non définies, les caractéristiques commerciales manquantes et l’absence
+de service d’envoi/paiement restent des limites métier déjà connues, pas des régressions.
+
+REPRODUIRE
+Depuis le dossier du projet : python3 -m http.server 8765 --bind 127.0.0.1
+Ouvrir /tests/responsive.html sur cette origine et lancer les tests dans un profil dédié.
+Les tests du panier sont dans /tests/panier-v1.html.
+Les anciens rapports décrivent leurs états historiques ; le présent rapport et les
+fichiers responsive-*.json décrivent cette intervention.
+
+11. COMPÉTENCES CSS ET FRONT-END POUR STUDI
+
+- Audit du CSS existant et distinction entre risque structurel et défaut observé.
+- Amélioration progressive d’une navigation mobile first et maintien du desktop.
+- Typographie fluide avec rem, variables et clamp ; espacements proportionnés.
+- Grid/Flexbox, minmax, conteneurs fluides et seuils dictés par le contenu.
+- Choix entre contain pour produits et cover pour visuels d’ambiance.
+- États ARIA, hidden, focus et comportement clavier sans piège de focus.
+- Tests navigateur aux limites de largeur, cas métier et non-régression.
+- Documentation honnête des limites : CSS zoom distinct du zoom natif, contrôles
+  automatiques distincts d’une certification d’accessibilité complète.
