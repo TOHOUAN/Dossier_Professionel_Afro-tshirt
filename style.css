@@ -211,6 +211,10 @@ ul {
     background: #071017;
 }
 
+.final-cta .btn-dark {
+    background-color: #0b151b;
+}
+
 .btn-outline,
 .btn-outline-light {
     color: #fff;
@@ -2217,8 +2221,10 @@ textarea {
         border-color: #111;
     }
 
-    .final-cta-buttons a.btn-dark[href]:not([aria-disabled="true"]):hover {
-        border-color: transparent;
+    .final-cta .final-cta-buttons a.btn-dark[href]:not([aria-disabled="true"]):hover {
+        background-color: #fff;
+        border-color: #fff;
+        color: #111;
     }
 
     .final-cta-buttons a.btn-outline-dark[href]:not([aria-disabled="true"]):hover {
