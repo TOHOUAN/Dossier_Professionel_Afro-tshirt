@@ -203,11 +203,6 @@ ul {
     max-width: 100%;
     padding-block: 12px;
     text-align: center;
-    transition: transform 0.25s ease;
-}
-
-.btn:hover {
-    transform: translateY(-2px);
 }
 
 .btn-primary,
@@ -1090,11 +1085,6 @@ ul {
     color: #fff;
 }
 
-.rejoindre-button:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-}
-
 /* Nous rejoindre : offres et affiliation */
 .rejoindre-textile,
 .rejoindre-affiliation,
@@ -1427,10 +1417,6 @@ ul {
     cursor: pointer;
 }
 
-.contact-submit:hover {
-    background: #111;
-}
-
 .contact-submit:disabled {
     cursor: not-allowed;
 }
@@ -1598,14 +1584,6 @@ main:focus {
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;
-    }
-
-    .btn {
-        transition: none;
-    }
-
-    .btn:hover {
-        transform: none;
     }
 }
 
@@ -2211,5 +2189,45 @@ textarea {
     .boutique-grid,
     .produit-related-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* États interactifs des CTA */
+@media (prefers-reduced-motion: no-preference) {
+    :is(a[href], button, input[type="submit"]):is(.btn, .rejoindre-button, .contact-submit, .boutique-add, .panier-link-button, .panier-back):not(:disabled, [aria-disabled="true"]) {
+        transition: background-color 220ms ease, color 220ms ease, border-color 220ms ease;
+    }
+
+    .final-cta-buttons a.btn[href]:not([aria-disabled="true"]),
+    a.rejoindre-button[href]:not(.rejoindre-button-outline, .rejoindre-button-dark, [aria-disabled="true"]) {
+        transition-duration: 250ms;
+    }
+}
+
+:is(a[href], button, input[type="submit"]):is(.btn, .rejoindre-button, .contact-submit, .boutique-add, .panier-link-button, .panier-back):not(:disabled, [aria-disabled="true"]):focus-visible {
+    background-color: #e5d1ad;
+    color: #111;
+    border-color: #111;
+}
+
+@media (hover: hover) {
+    :is(a[href], button, input[type="submit"]):is(.btn, .rejoindre-button, .contact-submit, .boutique-add, .panier-link-button, .panier-back):not(:disabled, [aria-disabled="true"]):hover {
+        background-color: #e5d1ad;
+        color: #111;
+        border-color: #111;
+    }
+
+    .final-cta-buttons a.btn-dark[href]:not([aria-disabled="true"]):hover {
+        border-color: transparent;
+    }
+
+    .final-cta-buttons a.btn-outline-dark[href]:not([aria-disabled="true"]):hover {
+        background-color: #0b151b;
+        color: #fff;
+    }
+
+    a.rejoindre-button[href]:not(.rejoindre-button-outline, .rejoindre-button-dark, [aria-disabled="true"]):hover {
+        background-color: #fff;
+        border-color: #e5d1ad;
     }
 }
